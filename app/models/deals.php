@@ -1,11 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Red
- * Date: 30.04.2015
- * Time: 8:38
- */
-
+<?php namespace models;
 namespace models;
 
 
@@ -16,6 +9,7 @@ class deals extends \core\model {
     }
 
     public function getDeals() {
+        return $this->_db->select('SELECT * FROM DEAL');
     }
 
     public function getDeal($id) {
@@ -27,6 +21,5 @@ class deals extends \core\model {
     }
 
     public function updateDeal($deal) {
-
     }
 }

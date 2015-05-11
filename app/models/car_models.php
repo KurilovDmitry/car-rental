@@ -1,14 +1,12 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Red
- * Date: 21.04.2015
- * Time: 20:01
- */
+<?php namespace models;
 
-namespace models;
+class car_models extends \core\model {
 
+    function __construct() {
+        parrent::__construct();
+    }
 
-class car_models {
-
+    public function getCarModels() {
+        return $this->_db->select('SELECT ID, CAR_ID, MODEL_ID FROM CAR_MODEL');
+    }
 }

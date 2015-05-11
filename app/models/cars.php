@@ -11,7 +11,7 @@ class cars extends \core\model {
     }
 
     public function getAllCars() {
-        return $this->_db->select('SELECT C.ID, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION SEPARATOR) PROPERTIES FROM CAR C
+        return $this->_db->select('SELECT C.ID, C.PRICE, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION SEPARATOR) PROPERTIES FROM CAR C
                                     JOIN (
                                       SELECT M.MODEL, CM.CAR_ID CAR_ID FROM MODEL M
                                       JOIN CAR_MODEL CM ON M.ID = CM.MODEL_ID
