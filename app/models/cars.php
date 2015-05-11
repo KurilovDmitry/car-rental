@@ -7,18 +7,18 @@ class cars extends \core\model {
     }
 
     public function getCars() {
-        return $this->_db->select('SELECT C.* FROM CAR C JOIN CAR_MODEL CM IN C.ID = CM.CAR_ID JOIN MODEL M IN CM.MODEL_ID = M.ID');
+        return $this->_db->select('SELECT C.* FROM CAR C JOIN CAR_MODEL CM ON C.ID = CM.CAR_ID JOIN MODEL M ON CM.MODEL_ID = M.ID');
     }
 
     public function getAllCars() {
-        return $this->_db->select('SELECT C.ID, C.PRICE, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION SEPARATOR) PROPERTIES FROM CAR C
+        return $this->_db->select('SELECT C.*, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION) FROM CAR C
                                     JOIN (
-                                      SELECT M.MODEL, CM.CAR_ID CAR_ID FROM MODEL M
-                                      JOIN CAR_MODEL CM ON M.ID = CM.MODEL_ID
+                                    SELECT M.MODEL, CM.CAR_ID CAR_ID FROM MODEL M
+                                    JOIN CAR_MODEL CM ON M.ID = CM.MODEL_ID
                                     ) AS QM
                                     JOIN (
-                                      SELECT P.DESCRIPTION DESCRIPTION, CP.CAR_ID CAR_ID FROM PROPERTY P
-                                      JOIN CAR_PROPERTY CP ON P.ID = CP.PROPERTY_ID
+                                    SELECT P.DESCRIPTION DESCRIPTION, CP.CAR_ID CAR_ID FROM PROPERTY P
+                                    JOIN CAR_PROPERTY CP ON P.ID = CP.PROPERTY_ID
                                     ) AS QP
                                     WHERE C.ID = QM.CAR_ID
                                     AND C.ID = QP.CAR_ID
@@ -26,7 +26,7 @@ class cars extends \core\model {
     }
 
     public function getRentedCars() {
-        return $this->_db->select('SELECT C.ID, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION SEPARATOR) PROPERTIES FROM CAR C
+        return $this->_db->select('SELECT C.*, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION) PROPERTIES FROM CAR C
                                     JOIN (
                                       SELECT M.MODEL, CM.CAR_ID CAR_ID FROM MODEL M
                                       JOIN CAR_MODEL CM ON M.ID = CM.MODEL_ID
@@ -45,7 +45,7 @@ class cars extends \core\model {
     }
 
     public function getNotRentedCars() {
-        return $this->_db->select('SELECT C.ID, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION SEPARATOR) PROPERTIES FROM CAR C
+        return $this->_db->select('SELECT C.*, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION) PROPERTIES FROM CAR C
                                     JOIN (
                                       SELECT M.MODEL, CM.CAR_ID CAR_ID FROM MODEL M
                                       JOIN CAR_MODEL CM ON M.ID = CM.MODEL_ID
@@ -64,11 +64,44 @@ class cars extends \core\model {
     }
 
     public function getPopularCars($car) {
-
+        return $this->_db->select('SELECT C.*, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION) FROM CAR C
+                                    JOIN (
+                                    SELECT M.MODEL, CM.CAR_ID CAR_ID FROM MODEL M
+                                    JOIN CAR_MODEL CM ON M.ID = CM.MODEL_ID
+                                    ) AS QM
+                                    JOIN (
+                                    SELECT P.DESCRIPTION DESCRIPTION, CP.CAR_ID CAR_ID FROM PROPERTY P
+                                    JOIN CAR_PROPERTY CP ON P.ID = CP.PROPERTY_ID
+                                    ) AS QP
+                                    WHERE C.ID = QM.CAR_ID
+                                    AND C.ID = QP.CAR_ID
+                                    AND C.ID IN (
+                                        SELECT D.CAR_ID FROM DEAL D
+                                        GROUP BY D.CAR_ID
+                                        HAVING COUNT(D.ID) > (
+                                            SELECT AVG(DealsCount.N) FROM (
+                                              SELECT COUNT(ID) AS N
+                                              FROM DEAL
+                                              GROUP BY CAR_ID
+                                            ) DealsCount
+                                        )
+                                    )');
     }
 
     public function getCar($id) {
-
+        return $this->_db->select('SELECT C.*, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION) FROM CAR C
+                                    JOIN (
+                                    SELECT M.MODEL, CM.CAR_ID CAR_ID FROM MODEL M
+                                    JOIN CAR_MODEL CM ON M.ID = CM.MODEL_ID
+                                    ) AS QM
+                                    JOIN (
+                                    SELECT P.DESCRIPTION DESCRIPTION, CP.CAR_ID CAR_ID FROM PROPERTY P
+                                    JOIN CAR_PROPERTY CP ON P.ID = CP.PROPERTY_ID
+                                    ) AS QP
+                                    WHERE C.ID = QM.CAR_ID
+                                    AND C.ID = QP.CAR_ID
+                                    AND  C.ID = $id
+                                    GROUP BY C.ID');
     }
 
     public function addCar($car) {
