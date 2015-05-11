@@ -18,13 +18,13 @@ class preferences extends \core\model {
     // получить список заказов/предпочтений
     public function getPreferences() {
         return array(array(
-            'Id' => '1',
-            'StartDate' => '1.01.2001',
-            'RentDuration' => 5,
-            'Properties' => 'Ля-ля, тополя, тудак-судак',
+            'ID' => '1',
+            'START_DATE' => '1.01.2001',
+            'RENT_DURATION' => 5,
+            'PROPERTIES' => 'Ля-ля, тополя, тудак-судак',
             'Client_FirstName' => 'Сергей',
             'Client_LastName' => 'Костров',
-            'Deal_Id' => NULL));    // NULL если сделки еще нет
+            'DEAL_ID' => NULL));    // NULL если сделки еще нет
     }
 
     public function getPreference($id) {

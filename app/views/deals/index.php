@@ -16,14 +16,14 @@
                 <?php
                 foreach($data['preferences'] as $preference) {
                     echo '<tr>';
-                    echo '<td>'.$preference['Id'].'</td>';
-                    echo '<td>'.$preference['StartDate'].'</td>';
-                    echo '<td>'.$preference['RentDuration'].'</td>';
-                    echo '<td>'.$preference['Properties'].'</td>';
+                    echo '<td>'.$preference['ID'].'</td>';
+                    echo '<td>'.$preference['START_DATE'].'</td>';
+                    echo '<td>'.$preference['RENT_DURATION'].'</td>';
+                    echo '<td>'.$preference['PROPERTIES'].'</td>';
                     echo '<td>'.$preference['Client_FirstName'].' '.$preference['Client_LastName'].'</td>';
                     echo '<td>';
-                    if ($preference['Deal_Id'] == NULL) {
-                        echo '<a href="#" class="btn btn-success">Доб.сделку</a>';
+                    if ($preference['DEAL_ID'] == NULL) {
+                        echo '<a href="/deals/add/?preference='.$preference['ID'].'" class="btn btn-success">Доб.сделку</a>';
                     }
                     else {
                         echo $preference['Deal_Id'];
@@ -67,16 +67,6 @@
                             foreach ($data['customers'] as $customer) {
                                 echo '<option value="'.$customer['ID'].'">'.$customer['FIRST_NAME'].' '.$customer['LAST_NAME'].'</option>';
                             }
-                            ?>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="carSelect">Авто</label>
-                        <select class="form-control" name="car" id="carSelect">
-                            <?php
-                                foreach ($data['car_models'] as $c_model) {
-                                    echo '<option value="'.$c_model['ID'].'">'.$c_model['MODEL'].'</option>';
-                                }
                             ?>
                         </select>
                     </div>
