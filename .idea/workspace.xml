@@ -2,10 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8e3cb54-ec01-4ddf-bdd3-534658211736" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/deals/add.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/deals.php" afterPath="$PROJECT_DIR$/app/controllers/deals.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deals/index.php" afterPath="$PROJECT_DIR$/app/views/deals/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/preferences.php" afterPath="$PROJECT_DIR$/app/models/preferences.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CarRental.iws" />
@@ -39,9 +35,12 @@
       <file leaf-file-name="dbinit.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dbinit.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.506329" vertical-offset="1530" max-vertical-offset="2567">
-              <caret line="97" column="10" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="10" />
-              <folding />
+            <state vertical-scroll-proportion="-1.506329" vertical-offset="1513" max-vertical-offset="3179">
+              <caret line="96" column="10" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
+              <folding>
+                <marker date="1431351762336" expanded="true" signature="44:172" placeholder="CREATE TABLE..CAR..." />
+                <marker date="1431351762336" expanded="true" signature="3586:4616" placeholder="CREATE TABLE..PAYMENT..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -49,8 +48,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/deals/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.26694044" vertical-offset="193" max-vertical-offset="1836">
-              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+            <state vertical-scroll-proportion="0.6858316" vertical-offset="193" max-vertical-offset="1836">
+              <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
               <folding />
             </state>
           </provider>
@@ -220,28 +219,6 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="deals" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CarRental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CarRental" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -322,7 +299,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913387" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -336,7 +313,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24670571" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24670571" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -375,18 +352,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT C.* F..CAR..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT C.* F..CAR..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
           </folding>
         </state>
       </provider>
@@ -396,18 +373,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="289">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT C.* F..CAR..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT C.* F..CAR..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
           </folding>
         </state>
       </provider>
@@ -630,13 +607,13 @@
         <state vertical-scroll-proportion="0.186" vertical-offset="9" max-vertical-offset="833">
           <caret line="6" column="5" selection-start-line="6" selection-start-column="5" selection-end-line="6" selection-end-column="5" />
           <folding>
-            <marker date="1431344151523" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT..." />
-            <marker date="1431344151523" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT..." />
-            <marker date="1431344151523" expanded="true" signature="-1:-1" placeholder="SELECT D.CLI..DEAL..." />
-            <marker date="1431344151523" expanded="true" signature="-1:-1" placeholder="SELECT bigJo..*..." />
-            <marker date="1431344151523" expanded="true" signature="-1:-1" placeholder="SELECT CLIEN..*..." />
-            <marker date="1431344151523" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CLIENT..." />
-            <marker date="1431344151523" expanded="true" signature="-1:-1" placeholder="SELECT (SUM(..PAYMENT..." />
+            <marker date="1431351762326" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT..." />
+            <marker date="1431351762326" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT..." />
+            <marker date="1431351762326" expanded="true" signature="-1:-1" placeholder="SELECT D.CLI..DEAL..." />
+            <marker date="1431351762326" expanded="true" signature="-1:-1" placeholder="SELECT bigJo..*..." />
+            <marker date="1431351762326" expanded="true" signature="-1:-1" placeholder="SELECT CLIEN..*..." />
+            <marker date="1431351762326" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CLIENT..." />
+            <marker date="1431351762326" expanded="true" signature="-1:-1" placeholder="SELECT (SUM(..PAYMENT..." />
           </folding>
         </state>
       </provider>
@@ -690,34 +667,37 @@
         <state vertical-scroll-proportion="1.068" vertical-offset="588" max-vertical-offset="1394">
           <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding>
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT C.* F..CAR..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431349272906" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT C.* F..CAR..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CAR..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431351762313" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dbinit.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.506329" vertical-offset="1530" max-vertical-offset="2567">
-          <caret line="97" column="10" selection-start-line="97" selection-start-column="2" selection-end-line="97" selection-end-column="10" />
-          <folding />
+        <state vertical-scroll-proportion="-1.506329" vertical-offset="1513" max-vertical-offset="3179">
+          <caret line="96" column="10" selection-start-line="96" selection-start-column="10" selection-end-line="96" selection-end-column="10" />
+          <folding>
+            <marker date="1431351762336" expanded="true" signature="44:172" placeholder="CREATE TABLE..CAR..." />
+            <marker date="1431351762336" expanded="true" signature="3586:4616" placeholder="CREATE TABLE..PAYMENT..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/deals/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.26694044" vertical-offset="193" max-vertical-offset="1836">
-          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+        <state vertical-scroll-proportion="0.6858316" vertical-offset="193" max-vertical-offset="1836">
+          <caret line="31" column="33" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
           <folding />
         </state>
       </provider>
