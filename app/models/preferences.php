@@ -21,8 +21,10 @@ class preferences extends \core\model {
             'Id' => '1',
             'StartDate' => '1.01.2001',
             'RentDuration' => 5,
+            'Properties' => 'Ля-ля, тополя, тудак-судак',
             'Client_FirstName' => 'Сергей',
-            'Client_LastName' => 'Костров'));
+            'Client_LastName' => 'Костров',
+            'Deal_Id' => NULL));    // NULL если сделки еще нет
     }
 
     public function getPreference($id) {
