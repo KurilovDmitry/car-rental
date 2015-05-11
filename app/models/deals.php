@@ -1,14 +1,11 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Red
- * Date: 30.04.2015
- * Time: 8:38
- */
+<?php namespace models;
 
-namespace models;
+class deals extends \core\model {
+    function __construct() {
+        parent::__construct();
+    }
 
-
-class deals {
-
+    public function getDeals() {
+        return $this->_db->select('SELECT * FROM DEAL');
+    }
 }
