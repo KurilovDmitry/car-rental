@@ -65,7 +65,16 @@ class preferences extends \core\model {
                             'MODEL_ID' => $preference['MODEL_ID']);
         $this->_db->insert(PREFERENCE, $preferences);
         $this->_db->insert(CLIENT_PREFERENCE, $prefClient);
-        $this->_db->insert(PREFERENCE_PROPERTY, $prefProp);
-        $this->_db->insert(PREFERENCE_MODEL, $prefModel);
+        foreach ($prefProp as $value) {
+            $data = array('PREFERENCE_ID' => $prefProp['PREFERENCE_ID'],
+                            'PROPERTY_ID' => $value);
+            $this->_db->insert(PREFERENCE_PROPERTY, $data);
+        }
+        foreach ($prefModel as $value) {
+            $data = array('PREFERENCE_ID' => $prefProp['PREFERENCE_ID'],
+                            'MODEL_ID' => $value);
+            $this->_db->insert(PREFERENCE_MODEL, $data);
+        }
+
     }
 }

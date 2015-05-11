@@ -21,6 +21,7 @@ class deals extends \core\model {
     }
 
 //    public function updateDeal($deal) {
+//
 //        $this->_db->update(DEAL, $deal, );
 //    }
 }
