@@ -9,6 +9,24 @@
 namespace models;
 
 
-class deals {
+class deals extends \core\model {
 
+    function __construct() {
+        parent::__construct();
+    }
+
+    public function getDeals() {
+    }
+
+    public function getDeal($id) {
+
+    }
+
+    public function addDeal($deal) {
+
+    }
+
+    public function updateDeal($deal) {
+
+    }
 }

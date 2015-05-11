@@ -63,5 +63,15 @@ class cars extends \core\model {
                                     GROUP BY C.ID');
     }
 
-    
+    public function getPopularCars($car) {
+
+    }
+
+    public function getCar($id) {
+
+    }
+
+    public function addCar($car) {
+
+    }
 }

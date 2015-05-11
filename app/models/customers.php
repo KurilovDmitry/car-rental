@@ -9,6 +9,25 @@
 namespace models;
 
 
-class customers {
+class customers extends \core\model {
 
+    function __construct() {
+        parent::__construct();
+    }
+
+    public function getAllCustomers() {
+
+    }
+
+    public function getCustomer($id) {
+
+    }
+
+    public function getRegularCustomers() {
+
+    }
+
+    public function getHigherIncomeCustomers() {
+
+    }
 }

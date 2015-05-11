@@ -64,8 +64,14 @@ use \core\router,
     \helpers\url;
 
 //define routes
-Router::any('', '\controllers\welcome@index');
-Router::any('/subpage', '\controllers\welcome@subpage');
+Router::any('', '\controllers\deals@index');
+Router::any('/deals', '\controllers\deals@index');
+
+Router::any('/cars', '\controllers\cars@index');
+
+Router::any('/clients', '\controllers\clients@index');
+
+Router::any('/statistic', '\controllers\statistic@index');
 
 //if no route found
 Router::error('\core\error@index');
