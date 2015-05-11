@@ -19,7 +19,7 @@ class Clients extends \core\controller{
 		$data['title'] = 'Клиенты';
 		
 		View::rendertemplate('header', $data);
-		View::render('deals/index', $data);
+		View::render('clients/index', $data);
 		View::rendertemplate('footer', $data);
 	}
 

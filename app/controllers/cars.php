@@ -19,7 +19,7 @@ class Cars extends \core\controller{
 		$data['title'] = 'Автомобили';
 		
 		View::rendertemplate('header', $data);
-		View::render('deals/index', $data);
+		View::render('cars/index', $data);
 		View::rendertemplate('footer', $data);
 	}
 

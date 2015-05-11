@@ -66,6 +66,8 @@ use \core\router,
 //define routes
 Router::any('', '\controllers\deals@index');
 Router::any('/deals', '\controllers\deals@index');
+Router::any('/deals/addPreference', '\controllers\deals@addPreference');
+Router::any('/deals/add', '\controllers\deals@add');
 
 Router::any('/cars', '\controllers\cars@index');
 

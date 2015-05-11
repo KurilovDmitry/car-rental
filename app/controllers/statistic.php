@@ -19,7 +19,7 @@ class Statistic extends \core\controller{
 		$data['title'] = 'Статистика';
 		
 		View::rendertemplate('header', $data);
-		View::render('deals/index', $data);
+		View::render('statistic/index', $data);
 		View::rendertemplate('footer', $data);
 	}
 

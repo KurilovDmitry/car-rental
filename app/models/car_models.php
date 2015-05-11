@@ -3,7 +3,7 @@
 class car_models extends \core\model {
 
     function __construct() {
-        parrent::__construct();
+        parent::__construct();
     }
 
     public function getCarModels() {
