@@ -105,6 +105,19 @@ class cars extends \core\model {
     }
 
     public function addCar($car) {
+        $carArray = array("COST" => $car["COST"]);
+        $carModelArray = array("CAR_ID" => $car["CAR_ID"],
+                                "MODEL_ID" => $car["MODEL_ID"]);
+        $carPropertyArray = array("CAR_ID" => $car["CAR_ID"],
+                                    "PROPERTY" => $car["CAR_PROPERTY"]);
+        $this->_db->insert(CAR, $carArray);
+        $this->_db->insert(CAR_MODEL, $carModelArray);
+        //$this->_db->insert(CAR_PROPERTY, $carPropertyArray);
+        foreach ($carPropertyArray as $value) {
+            $data = array('CAR_ID' => $carPropertyArray['CAR_ID'],
+                            'PROPERTY_ID' => $value);
+            $this->_db->insert(CAR_PROPERTY, $data);
+        }
 
     }
 }
