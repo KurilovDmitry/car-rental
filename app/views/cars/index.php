@@ -32,31 +32,37 @@
 </div>
 
 <div class="row">
-    <a href="#clientForm" data-toggle="collapse" class="btn btn-default">Добавить клиента <span class="caret"></span></a>
+    <a href="#clientForm" data-toggle="collapse" class="btn btn-default">Добавить авто <span class="caret"></span></a>
     <div class="collapse" id="clientForm" style="margin-top:2em">
-        <form action="/clients/add/" method="post">
+        <form action="/cars/add/" method="post">
             <div class="form-group">
-                <label for="firstName">Имя</label>
-                <input type="text" class="form-control" name="firstName" id="firstName" placeholder="имя">
-            </div>
-            <div class="form-group">
-                <label for="lastName">Фамилия</label>
-                <input type="text" class="form-control" name="lastName" id="lastName" placeholder="фамилия">
-            </div>
-            <div class="form-group">
-                <label for="middleName">Отчество</label>
-                <input type="text" class="form-control" name="middleName" id="middleName" placeholder="отчество">
+                <label for="carModelInput">Модель авто</label>
+                <select class="form-control" id="carModelInput" name="carModel">
+                    <?php
+                    foreach ($data['car_models'] as $c_model) {
+                        echo '<option value="'.$c_model->ID.'">'.$c_model->MODEL.'</option>';
+                    }
+                    ?>
+                </select>
             </div>
 
             <div class="form-group">
-                <label for="passport">Паспортные данные</label>
-                <textarea class="form-control" rows="4" name="passport" id="passport">
-                </textarea>
+                <label for="propertiesInput">Свойства</label>
+                <select multiple class="form-control" id="propertiesInput" name="properties[]">
+                    <?php
+                    foreach ($data['car_properties'] as $c_property) {
+                        echo '<option value="'.$c_property->ID.'">'.$c_property->DESCRIPTION.'</option>';
+                    }
+                    ?>
+                </select>
             </div>
 
             <div class="form-group">
-                <label for="phoneNumber">Телефон</label>
-                <input type="tel" class="form-control" name="phoneNumber" id="phoneNumber" placeholder="+7 () ">
+                <label for="priceInput">Цена</label>
+                <div class="input-group">
+                    <input type="number" class="form-control" name="price" id="priceInput" placeholder="сколько">
+                    <div class="input-group-addon">$</div>
+                </div>
             </div>
 
             <button type="submit" class="btn btn-danger">Добавить</button>
@@ -70,12 +76,9 @@ function printCars($array) {
     <table class="table table-striped">
         <thead>
         <tr>
-            <th>Имя</th>
-            <th>Фамилия</th>
-            <th>Отчество</th>
-            <th>Паспортные данные</th>
-            <th>Телефон</th>
-            <th>Скидка</th>
+            <th>Модель</th>
+            <th>Свойства</th>
+            <th>Цена</th>
         </tr>
         </thead>
         <tbody>
@@ -83,12 +86,9 @@ function printCars($array) {
         foreach ($array as $customer)
         {
             echo '<tr>';
-            echo '  <td>'.$customer->FIRST_NAME.'</td>';
-            echo '  <td>'.$customer->LAST_NAME.'</td>';
-            echo '  <td>'.$customer->MIDDLE_NAME.'</td>';
-            echo '  <td>'.$customer->PASSPORT.'</td>';
-            echo '  <td>'.$customer->PHONE_NUMBER.'</td>';
-            echo '  <td>'.$customer->DISCOUNT.'</td>';
+            echo '  <td>'.$customer->MODEL.'</td>';
+            echo '  <td>'.$customer->DESCRIPTION.'</td>';
+            echo '  <td>'.$customer->COST.'</td>';
             echo '</tr>';
         }
         ?>

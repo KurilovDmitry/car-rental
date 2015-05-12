@@ -24,9 +24,21 @@ class Cars extends \core\controller{
         $data['rented_cars'] = $cars->getRentedCars();
         $data['not_rented_cars'] = $cars->getNotRentedCars();
 
+        $data['car_properties'] = (new \models\cproperties())->getProperties();
+        $data['car_models'] = (new \models\cmodels())->getModels();
+
 		View::rendertemplate('header', $data);
 		View::render('cars/index', $data);
 		View::rendertemplate('footer', $data);
 	}
 
+    public function add() {
+        $car = array(
+            'PROPERTIES' => $_POST['properties'],
+            'MODEL_ID' => $_POST['model'],
+            'COST' => $_POST['cost'],
+        );
+        (new \models\cars())->addCar($car);
+        header('Location: '.DIR.'cars');
+    }
 }
