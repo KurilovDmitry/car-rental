@@ -17,6 +17,10 @@ class Statistic extends \core\controller{
 	public function index() {
         $data['nav_page'] = 'statistic';
 		$data['title'] = 'Статистика';
+
+        $benefits = new \models\benefits();
+        $date['total_revenue'] = $benefits->getTotalCash();
+        $date['fine_quality'] = $benefits->testPunishmentSystem();
 		
 		View::rendertemplate('header', $data);
 		View::render('statistic/index', $data);

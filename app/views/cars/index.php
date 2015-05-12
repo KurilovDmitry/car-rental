@@ -5,9 +5,9 @@
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">Все</a></li>
-        <li role="presentation"><a href="#regular" aria-controls="regular" role="tab" data-toggle="tab">Постоянные</a></li>
-        <li role="presentation"><a href="#most-profitable" aria-controls="most-profitable" role="tab" data-toggle="tab">Прибыльные</a></li>
-        <li role="presentation"><a href="#most-profitable" aria-controls="most-profitable" role="tab" data-toggle="tab">Прибыльные</a></li>
+        <li role="presentation"><a href="#regular" aria-controls="regular" role="tab" data-toggle="tab">Популярные</a></li>
+        <li role="presentation"><a href="#most-profitable" aria-controls="most-profitable" role="tab" data-toggle="tab">В прокате</a></li>
+        <li role="presentation"><a href="#most-profitable" aria-controls="most-profitable" role="tab" data-toggle="tab">Не в прокате</a></li>
     </ul>
 
     <!-- Tab panes -->
@@ -87,7 +87,7 @@ function printCars($array) {
         {
             echo '<tr>';
             echo '  <td>'.$customer->MODEL.'</td>';
-            echo '  <td>'.$customer->DESCRIPTION.'</td>';
+            echo '  <td>'.$customer->PROPERTIES.'</td>';
             echo '  <td>'.$customer->COST.'</td>';
             echo '</tr>';
         }
