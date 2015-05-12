@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< 2c17cfbbd34701ef38004b2c29078c757915fbc7
     <list default="true" id="a8e3cb54-ec01-4ddf-bdd3-534658211736" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/clients.php" afterPath="$PROJECT_DIR$/app/controllers/clients.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/deals.php" afterPath="$PROJECT_DIR$/app/controllers/deals.php" />
@@ -8,6 +9,9 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/clients/index.php" afterPath="$PROJECT_DIR$/app/views/clients/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deals/index.php" afterPath="$PROJECT_DIR$/app/views/deals/index.php" />
     </list>
+=======
+    <list default="true" id="a8e3cb54-ec01-4ddf-bdd3-534658211736" name="Default" comment="" />
+>>>>>>> 055da88b923da293cd06a15ffd094b661dbdbaa0
     <ignored path="CarRental.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
