@@ -60,7 +60,7 @@
             <div class="form-group">
                 <label for="priceInput">Цена</label>
                 <div class="input-group">
-                    <input type="number" class="form-control" name="price" id="priceInput" placeholder="сколько">
+                    <input type="number" class="form-control" name="cost" id="priceInput" placeholder="сколько">
                     <div class="input-group-addon">$</div>
                 </div>
             </div>

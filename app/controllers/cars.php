@@ -35,7 +35,7 @@ class Cars extends \core\controller{
     public function add() {
         $car = array(
             'PROPERTIES' => $_POST['properties'],
-            'MODEL_ID' => $_POST['model'],
+            'MODEL_ID' => $_POST['carModel'],
             'COST' => $_POST['cost'],
         );
         (new \models\cars())->addCar($car);
