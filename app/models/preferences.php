@@ -28,7 +28,7 @@ class preferences extends \core\model {
     }
 
     public function getPreference($id) {
-        $this->_db->select('SELECT P.*, P_C.CLIENT_ID, GROUP_CONCAT(PROP.DESCRIPTION), GROUP_CONCAT(M.MODEL) FROM PREFERENCE P
+        $this->_db->select("SELECT P.*, P_C.CLIENT_ID, GROUP_CONCAT(PROP.DESCRIPTION), GROUP_CONCAT(M.MODEL) FROM PREFERENCE P
                             JOIN (
                               SELECT * FROM CLIENT_PREFERENCE
                             ) P_C
@@ -50,7 +50,7 @@ class preferences extends \core\model {
                             AND P.ID = P_M.PREFERENCE_ID
                             AND P_M.MODEL_ID = M.ID
                             AND P.ID = $id
-                            GROUP BY P.ID');
+                            GROUP BY P.ID");
     }
 
     public function addPreference($preference) {
