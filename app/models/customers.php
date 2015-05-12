@@ -41,4 +41,7 @@ class customers extends \core\model {
                                        FROM PAYMENT, CLIENT
                                     )');
     }
+    public function addCustomer($customer) {
+
+    }
 }

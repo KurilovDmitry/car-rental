@@ -57,21 +57,20 @@ class preferences extends \core\model {
         $preferences = array('START_DATE' => $preference['START_DATE'],
                                 'RENT_DURATION' => $preference['RENT_DURATION'],
                                 'MAXIMAL_COST' => $preference['MAXIMAL_COST']);
-        $prefClient = array('PREFERENCE_ID' => $preference['PREFERENCE_ID'],
+        $preferenceId = $this->_db->insert(PREFERENCE, $preferences);
+
+        $prefClient = array('PREFERENCE_ID' => $preferenceId,
                             'CLIENT_ID' => $preference['CLIENT_ID']);
-        $prefProp = array('PREFERENCE_ID' => $preference['PREFERENCE_ID'],
-                            'PROPERTY_ID' => $preference['PROPERTY_ID']);
-        $prefModel = array('PREFERENCE_ID' => $preference['PREFERENCE_ID'],
-                            'MODEL_ID' => $preference['MODEL_ID']);
-        $this->_db->insert(PREFERENCE, $preferences);
         $this->_db->insert(CLIENT_PREFERENCE, $prefClient);
-        foreach ($prefProp as $value) {
-            $data = array('PREFERENCE_ID' => $prefProp['PREFERENCE_ID'],
-                            'PROPERTY_ID' => $value);
+
+        foreach ($preference['PROPERTIES'] as $value) {
+            $data = array('PREFERENCE_ID' => $preferenceId,
+                'PROPERTY_ID' => $value);
             $this->_db->insert(PREFERENCE_PROPERTY, $data);
         }
-        foreach ($prefModel as $value) {
-            $data = array('PREFERENCE_ID' => $prefProp['PREFERENCE_ID'],
+
+        foreach ($preference['MODELS'] as $value) {
+            $data = array('PREFERENCE_ID' => $preferenceId,
                             'MODEL_ID' => $value);
             $this->_db->insert(PREFERENCE_MODEL, $data);
         }
