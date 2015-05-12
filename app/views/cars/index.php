@@ -7,20 +7,25 @@
         <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">Все</a></li>
         <li role="presentation"><a href="#regular" aria-controls="regular" role="tab" data-toggle="tab">Постоянные</a></li>
         <li role="presentation"><a href="#most-profitable" aria-controls="most-profitable" role="tab" data-toggle="tab">Прибыльные</a></li>
+        <li role="presentation"><a href="#most-profitable" aria-controls="most-profitable" role="tab" data-toggle="tab">Прибыльные</a></li>
     </ul>
 
     <!-- Tab panes -->
     <div class="tab-content">
         <div role="tabpanel" class="tab-pane active" id="all">
-            <?php printCars($data['all_customers']) ?>
+            <?php printCars($data['all_cars']) ?>
         </div>
 
-        <div role="tabpanel" class="tab-pane" id="regular">
-            <?php printCars($data['regular_customers']) ?>
+        <div role="tabpanel" class="tab-pane" id="popular">
+            <?php printCars($data['popular_cars']) ?>
         </div>
 
-        <div role="tabpanel" class="tab-pane" id="most-profitable">
-            <?php printCars($data['most_profitable_customers']) ?>
+        <div role="tabpanel" class="tab-pane" id="rented">
+            <?php printCars($data['rented_cars']) ?>
+        </div>
+
+        <div role="tabpanel" class="tab-pane" id="not-rented">
+            <?php printCars($data['not_rented_cars']) ?>
         </div>
     </div>
 

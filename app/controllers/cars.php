@@ -17,7 +17,13 @@ class Cars extends \core\controller{
 	public function index() {
         $data['nav_page'] = 'cars';
 		$data['title'] = 'Автомобили';
-		
+
+        $cars = new \models\cars();
+        $data['all_cars'] = $cars->getAllCars();
+        $data['popular_cars'] = $cars->getPopularCars();
+        $data['rented_cars'] = $cars->getRentedCars();
+        $data['not_rented_cars'] = $cars->getNotRentedCars();
+
 		View::rendertemplate('header', $data);
 		View::render('cars/index', $data);
 		View::rendertemplate('footer', $data);
