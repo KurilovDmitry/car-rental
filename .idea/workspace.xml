@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8e3cb54-ec01-4ddf-bdd3-534658211736" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deals/add.php" afterPath="$PROJECT_DIR$/app/views/deals/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/deals.php" afterPath="$PROJECT_DIR$/app/controllers/deals.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deals/index.php" afterPath="$PROJECT_DIR$/app/views/deals/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/preferences.php" afterPath="$PROJECT_DIR$/app/models/preferences.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/statistic/index.php" afterPath="$PROJECT_DIR$/app/views/statistic/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CarRental.iws" />
@@ -33,36 +35,7 @@
     <favorites_list name="CarRental" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/deals/index.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45822102" vertical-offset="102" max-vertical-offset="2006">
-              <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
-              <folding>
-                <marker date="1431472830387" expanded="true" signature="1453:2013" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="1633:1647" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="1648:2013" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="1716:2013" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="1761:2013" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="1935:2013" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="2329:2569" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="2491:2569" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="2866:3096" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="3141:3527" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="3267:3500" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="3572:3807" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="3729:3807" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="4272:4599" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="4341:4599" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="4361:4554" placeholder="..." />
-                <marker date="1431472830387" expanded="true" signature="4378:4533" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -83,12 +56,10 @@
         <option value="$PROJECT_DIR$/app/models/cmodels.php" />
         <option value="$PROJECT_DIR$/app/models/car_models.php" />
         <option value="$PROJECT_DIR$/app/models/cproperties.php" />
-        <option value="$PROJECT_DIR$/app/views/deals/add.php" />
         <option value="$PROJECT_DIR$/app/core/logger.php" />
         <option value="$PROJECT_DIR$/sitemap.txt" />
         <option value="$PROJECT_DIR$/app/views/clients/index.php" />
         <option value="$PROJECT_DIR$/dbinit.sql" />
-        <option value="$PROJECT_DIR$/app/controllers/deals.php" />
         <option value="$PROJECT_DIR$/app/controllers/clients.php" />
         <option value="$PROJECT_DIR$/app/models/customers.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -96,10 +67,12 @@
         <option value="$PROJECT_DIR$/app/controllers/cars.php" />
         <option value="$PROJECT_DIR$/app/models/cars.php" />
         <option value="$PROJECT_DIR$/app/controllers/statistic.php" />
-        <option value="$PROJECT_DIR$/app/views/statistic/index.php" />
         <option value="$PROJECT_DIR$/app/views/cars/index.php" />
-        <option value="$PROJECT_DIR$/app/views/deals/index.php" />
         <option value="$PROJECT_DIR$/app/models/preferences.php" />
+        <option value="$PROJECT_DIR$/app/views/deals/add.php" />
+        <option value="$PROJECT_DIR$/app/views/statistic/index.php" />
+        <option value="$PROJECT_DIR$/app/controllers/deals.php" />
+        <option value="$PROJECT_DIR$/app/views/deals/index.php" />
       </list>
     </option>
   </component>
@@ -193,6 +166,11 @@
     </key>
   </component>
   <component name="RunManager" selected="PHP Web Application.WAMP">
+    <configuration default="false" name="CarRental on WAMP" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" temporary="true" scope="Directory" path="$PROJECT_DIR$" server_id="a87fb412-e5b8-48bc-89f1-8170a4859bc5" server_name="WAMP">
+      <RunnerSettings RunnerId="PhpUnitRemoteDebugRunner" />
+      <ConfigurationWrapper RunnerId="PhpUnitRemoteDebugRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner />
       <method />
@@ -229,9 +207,15 @@
       <ConfigurationWrapper RunnerId="PhpWebAppDebugRunner" />
       <method />
     </configuration>
-    <list size="1">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="PHP Web Application.WAMP" />
+      <item index="1" class="java.lang.String" itemvalue="PHPUnit on Server.CarRental on WAMP" />
     </list>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="PHPUnit on Server.CarRental on WAMP" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
   <component name="SvnConfiguration">
@@ -301,11 +285,18 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="67" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/app/core/logger.php</url>
+          <line>31</line>
+          <option name="timeStamp" value="70" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="71" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpWebAppRunConfigurationType">
-        <watch expression="(new \models\preferences())-&gt;getPreferences()" language="PHP" />
+        <watch expression="($preference-&gt;START_DATE.' + '.$preference-&gt;RENT_DURATION.' days')" language="PHP" />
       </configuration>
     </watches-manager>
   </component>
@@ -360,18 +351,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="1360">
           <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
           <folding>
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT P.*, ..PREFERENCE..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PROPERTY..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..MODEL..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT P.*, ..PREFERENCE..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PROPERTY..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..MODEL..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT P.*, ..PREFERENCE..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PROPERTY..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..MODEL..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT P.*, ..PREFERENCE..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PROPERTY..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..MODEL..." />
           </folding>
         </state>
       </provider>
@@ -381,7 +372,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1431472533246" expanded="true" signature="-1:-1" placeholder="SELECT C.* F..CAR..." />
             <marker date="1431472533246" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
             <marker date="1431472533246" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
             <marker date="1431472533246" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
@@ -411,7 +401,6 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="289">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <marker date="1431472533246" expanded="true" signature="-1:-1" placeholder="SELECT C.* F..CAR..." />
             <marker date="1431472533246" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
             <marker date="1431472533246" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
             <marker date="1431472533246" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
@@ -568,14 +557,14 @@
         <state vertical-scroll-proportion="0.5660377" vertical-offset="487" max-vertical-offset="884">
           <caret line="41" column="19" selection-start-line="41" selection-start-column="19" selection-end-line="41" selection-end-column="19" />
           <folding>
-            <marker date="1431469981561" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT..." />
-            <marker date="1431469981561" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT..." />
-            <marker date="1431469981561" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT..." />
-            <marker date="1431469981561" expanded="true" signature="-1:-1" placeholder="SELECT D.CLI..DEAL..." />
-            <marker date="1431469981561" expanded="true" signature="-1:-1" placeholder="SELECT bigJo..*..." />
-            <marker date="1431469981561" expanded="true" signature="-1:-1" placeholder="SELECT CLIEN..*..." />
-            <marker date="1431469981561" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CLIENT..." />
-            <marker date="1431469981561" expanded="true" signature="-1:-1" placeholder="SELECT (SUM(..PAYMENT..." />
+            <marker date="1431473380962" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT..." />
+            <marker date="1431473380962" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT..." />
+            <marker date="1431473380962" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT..." />
+            <marker date="1431473380962" expanded="true" signature="-1:-1" placeholder="SELECT D.CLI..DEAL..." />
+            <marker date="1431473380962" expanded="true" signature="-1:-1" placeholder="SELECT bigJo..*..." />
+            <marker date="1431473380962" expanded="true" signature="-1:-1" placeholder="SELECT CLIEN..*..." />
+            <marker date="1431473380962" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CLIENT..." />
+            <marker date="1431473380962" expanded="true" signature="-1:-1" placeholder="SELECT (SUM(..PAYMENT..." />
           </folding>
         </state>
       </provider>
@@ -592,14 +581,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22849463" vertical-offset="0" max-vertical-offset="3162">
           <caret line="5" column="6" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deals/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.730769" vertical-offset="298" max-vertical-offset="850">
-          <caret line="37" column="21" selection-start-line="37" selection-start-column="21" selection-end-line="37" selection-end-column="21" />
           <folding />
         </state>
       </provider>
@@ -628,17 +609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/statistic/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5040431" vertical-offset="0" max-vertical-offset="371">
-          <caret line="11" column="5" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#dt#1;n#dl#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#dd#1;n#dl#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/benefits.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.61731845" vertical-offset="0" max-vertical-offset="1105">
@@ -658,12 +628,57 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/cars/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="102" max-vertical-offset="1768">
+          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sitemap.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.266666" vertical-offset="24" max-vertical-offset="391">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.730769" vertical-offset="1424" max-vertical-offset="3621">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding>
+            <marker date="1431462905327" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1431462905327" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33153638" vertical-offset="4875" max-vertical-offset="6987">
+          <caret line="302" column="0" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/cars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.38274932" vertical-offset="232" max-vertical-offset="833">
+          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/cars.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-45.76923" vertical-offset="85" max-vertical-offset="2091">
-          <caret line="75" column="57" selection-start-line="75" selection-start-column="57" selection-end-line="75" selection-end-column="57" />
+        <state vertical-scroll-proportion="1.4097035" vertical-offset="276" max-vertical-offset="2091">
+          <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
           <folding>
-            <marker date="1431472533246" expanded="true" signature="-1:-1" placeholder="SELECT C.* F..CAR..." />
             <marker date="1431472533246" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
             <marker date="1431472533246" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
             <marker date="1431472533246" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
@@ -688,124 +703,76 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cars/index.php">
+    <entry file="file://$PROJECT_DIR$/app/views/deals/add.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="102" max-vertical-offset="1768">
-          <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="748">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/core/logger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.26923" vertical-offset="0" max-vertical-offset="2142">
-          <caret line="31" column="31" selection-start-line="31" selection-start-column="31" selection-end-line="31" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/cars.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4615383" vertical-offset="232" max-vertical-offset="833">
-          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/sitemap.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.266666" vertical-offset="24" max-vertical-offset="391">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/deals.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.3846154" vertical-offset="200" max-vertical-offset="1428">
-          <caret line="20" column="51" selection-start-line="20" selection-start-column="51" selection-end-line="20" selection-end-column="51" />
-          <folding>
-            <element signature="e#29#43#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.730769" vertical-offset="1424" max-vertical-offset="3621">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
-          <folding>
-            <marker date="1431462905327" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1431462905327" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/preferences.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47486034" vertical-offset="510" max-vertical-offset="1615">
-          <caret line="45" column="8" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="8" />
+        <state vertical-scroll-proportion="1.1899441" vertical-offset="849" max-vertical-offset="1615">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding>
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT P.*, ..PREFERENCE..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PROPERTY..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..MODEL..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT P.*, ..PREFERENCE..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PROPERTY..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
-            <marker date="1431473260580" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..MODEL..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT P.*, ..PREFERENCE..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PROPERTY..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..MODEL..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT P.*, ..PREFERENCE..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PROPERTY..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
+            <marker date="1431473407332" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..MODEL..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/deals.php">
+    <entry file="file://$PROJECT_DIR$/app/views/statistic/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33153638" vertical-offset="64" max-vertical-offset="629">
-          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding>
-            <marker date="1431462905658" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DEAL..." />
-            <marker date="1431462905658" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DEAL..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vendor/composer/ClassLoader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33153638" vertical-offset="4875" max-vertical-offset="6987">
-          <caret line="302" column="0" selection-start-line="302" selection-start-column="0" selection-end-line="302" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.091644205" vertical-offset="0" max-vertical-offset="371">
+          <caret line="2" column="19" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/deals/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45822102" vertical-offset="102" max-vertical-offset="2006">
-          <caret line="16" column="46" selection-start-line="16" selection-start-column="46" selection-end-line="16" selection-end-column="46" />
+        <state vertical-scroll-proportion="0.13746631" vertical-offset="918" max-vertical-offset="2023">
+          <caret line="57" column="29" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/deals.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.606469" vertical-offset="812" max-vertical-offset="1445">
+          <caret line="61" column="53" selection-start-line="61" selection-start-column="53" selection-end-line="61" selection-end-column="53" />
           <folding>
-            <marker date="1431472830387" expanded="true" signature="1453:2013" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="1633:1647" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="1648:2013" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="1716:2013" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="1761:2013" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="1935:2013" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="2329:2569" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="2491:2569" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="2866:3096" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="3141:3527" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="3267:3500" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="3572:3807" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="3729:3807" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="4272:4599" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="4341:4599" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="4361:4554" placeholder="..." />
-            <marker date="1431472830387" expanded="true" signature="4378:4533" placeholder="..." />
+            <element signature="e#29#43#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/core/logger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35579515" vertical-offset="395" max-vertical-offset="2142">
+          <caret line="31" column="23" selection-start-line="31" selection-start-column="23" selection-end-line="31" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/deals.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33153638" vertical-offset="200" max-vertical-offset="629">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding>
+            <marker date="1431473380976" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DEAL..." />
+            <marker date="1431473380976" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DEAL..." />
           </folding>
         </state>
       </provider>

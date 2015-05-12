@@ -32,13 +32,15 @@ class Deals extends \core\controller {
 
     public function add() {
         if ($_GET['preference']) {
-            $preference = (new \models\preferences())->getPreference($_GET['preference']);
+            $data['title'] = 'Добавление сделки';
+
+            $preference = (new \models\preferences())->getPreference($_GET['preference'])[0];
 
             $data['preference'] = $preference;
             $data['finishDate'] = date('Y-m-d',
                 strtotime(
-                    $preference['START_DATE']. ' + '
-                    .$preference['RENT_DURATION'].' days'));
+                    $preference->START_DATE. ' + '
+                    .$preference->RENT_DURATION.' days'));
             $data['cars'] = (new \models\cars())->getNotRentedCars();
             $data['customers'] = (new \models\customers())->getAllCustomers();
 
@@ -49,11 +51,10 @@ class Deals extends \core\controller {
         else {
             if ($_POST['preference']) {
                 $deal = array(
-                    'PROPERTIES' => $_POST['properties'],
                     'START_DATE' => $_POST['startDate'],
                     'FINISH_DATE' => $_POST['finishDate'],
                     'CAR_ID' => $_POST['car'],
-                    'CUSTOMER_ID' => $_POST['customer'],
+                    'CLIENT_ID' => $_POST['customer'],
                     'PREFERENCE_ID' => $_POST['preference']
                 );
 

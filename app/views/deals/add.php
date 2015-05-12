@@ -1,16 +1,10 @@
+<div class="page-header">
+    <h2>Добавление сделки для заказа #<?=$data['preference']->ID ?></h2>
+</div>
+
 <div class="row">
     <form action="/deals/add/" method="post">
         <input type="hidden" name="preference" value="<?=$data['preference']->ID ?>" />
-        <div class="form-group">
-            <label for="propertiesInput">Свойства</label>
-            <select multiple class="form-control" id="propertiesInput" name="properties[]">
-                <?php
-                foreach ($data['car_properties'] as $c_property) {
-                    echo '<option value="'.$c_property->ID.'">'.$c_property->DESCRIPTION.'</option>';
-                }
-                ?>
-            </select>
-        </div>
         <div class="form-group">
             <label for="startDateInput">Дата начала</label>
             <input type="date" class="form-control" name="startDate" id="startDateInput" value="<?=$data['preference']->START_DATE ?>">

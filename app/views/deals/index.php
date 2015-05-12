@@ -105,6 +105,7 @@
                 echo '<td>'.$deal->ID.'</td>';
                 echo '<td>'.$deal->START_DATE.'</td>';
                 echo '<td>'.$deal->FINISH_DATE.'</td>';
+                echo '<td>'.$deal->PREFERENCE_ID.'</td>';
                 echo '</tr>';
             }
             ?>
