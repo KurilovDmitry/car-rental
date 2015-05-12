@@ -178,5 +178,4 @@ VALUES
   ('FOG LIGHTS'),
   ('LED RUNNING LIGHTS'),
   ('4x4'),
-  ('FRAME SUV')
-;
+  ('FRAME SUV');

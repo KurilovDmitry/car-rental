@@ -68,7 +68,7 @@ class Deals extends \core\controller {
             'PROPERTIES' => $_POST['properties'],
             'START_DATE' => $_POST['startDate'],
             'RENT_DURATION' => $_POST['duration'],
-            'CUSTOMER_ID' => $_POST['customer'],
+            'CLIENT_ID' => $_POST['customer'],
             'MODELS' => $_POST['carModels']
         );
 
