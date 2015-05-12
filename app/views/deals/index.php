@@ -51,7 +51,7 @@
                     </div>
                     <div class="form-group">
                         <label for="carInput">Модель авто</label>
-                        <select class="form-control" id="carInput" name="carModel">
+                        <select multiple class="form-control" id="carInput" name="carModels[]">
                             <?php
                             foreach ($data['car_models'] as $c_model) {
                                 echo '<option value="'.$c_model->ID.'">'.$c_model->MODEL.'</option>';

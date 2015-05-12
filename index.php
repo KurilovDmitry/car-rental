@@ -72,6 +72,7 @@ Router::any('/deals/add', '\controllers\deals@add');
 Router::any('/cars', '\controllers\cars@index');
 
 Router::any('/clients', '\controllers\clients@index');
+Router::any('/clients/add', '\controllers\clients@add');
 
 Router::any('/statistic', '\controllers\statistic@index');
 

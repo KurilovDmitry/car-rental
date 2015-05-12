@@ -69,7 +69,7 @@ class Deals extends \core\controller {
             'START_DATE' => $_POST['startDate'],
             'RENT_DURATION' => $_POST['duration'],
             'CUSTOMER_ID' => $_POST['customer'],
-            'MODEL_ID' => $_POST['carModel']
+            'MODELS' => $_POST['carModels']
         );
 
         (new \models\preferences())->addPreference($preference);
