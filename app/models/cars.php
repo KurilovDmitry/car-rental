@@ -63,7 +63,7 @@ class cars extends \core\model {
                                     GROUP BY C.ID');
     }
 
-    public function getPopularCars($car) {
+    public function getPopularCars() {
         return $this->_db->select('SELECT C.*, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION) FROM CAR C
                                     JOIN (
                                     SELECT M.MODEL, CM.CAR_ID CAR_ID FROM MODEL M
@@ -89,7 +89,7 @@ class cars extends \core\model {
     }
 
     public function getCar($id) {
-        return $this->_db->select('SELECT C.*, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION) FROM CAR C
+        return $this->_db->select("SELECT C.*, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION) FROM CAR C
                                     JOIN (
                                     SELECT M.MODEL, CM.CAR_ID CAR_ID FROM MODEL M
                                     JOIN CAR_MODEL CM ON M.ID = CM.MODEL_ID
@@ -101,7 +101,7 @@ class cars extends \core\model {
                                     WHERE C.ID = QM.CAR_ID
                                     AND C.ID = QP.CAR_ID
                                     AND  C.ID = $id
-                                    GROUP BY C.ID');
+                                    GROUP BY C.ID");
     }
 
     public function addCar($car) {
@@ -112,7 +112,6 @@ class cars extends \core\model {
                                     "PROPERTY" => $car["CAR_PROPERTY"]);
         $this->_db->insert(CAR, $carArray);
         $this->_db->insert(CAR_MODEL, $carModelArray);
-        //$this->_db->insert(CAR_PROPERTY, $carPropertyArray);
         foreach ($carPropertyArray as $value) {
             $data = array('CAR_ID' => $carPropertyArray['CAR_ID'],
                             'PROPERTY_ID' => $value);

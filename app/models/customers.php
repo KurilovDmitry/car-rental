@@ -7,7 +7,7 @@ class customers extends \core\model {
     }
 
     public function getCustomer($id) {
-        return $this->_db->select('SELECT * FROM CLIENT WHERE CLIENT.ID = $id');
+        return $this->_db->select("SELECT * FROM CLIENT WHERE CLIENT.ID = $id");
     }
 
     public function getAllCustomers() {
