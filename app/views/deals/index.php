@@ -44,7 +44,17 @@
                         <select multiple class="form-control" id="propertiesInput" name="properties[]">
                             <?php
                             foreach ($data['car_properties'] as $c_property) {
-                                echo '<option value="'.$c_property['ID'].'">'.$c_property['DESCRIPTION'].'</option>';
+                                echo '<option value="'.$c_property->ID.'">'.$c_property->DESCRIPTION.'</option>';
+                            }
+                            ?>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="carInput">Модель авто</label>
+                        <select class="form-control" id="carInput" name="carModel">
+                            <?php
+                            foreach ($data['car_models'] as $c_model) {
+                                echo '<option value="'.$c_model->ID.'">'.$c_model->MODEL.'</option>';
                             }
                             ?>
                         </select>
@@ -65,7 +75,7 @@
                         <select class="form-control" name="customer" id="customerSelect">
                             <?php
                             foreach ($data['customers'] as $customer) {
-                                echo '<option value="'.$customer['ID'].'">'.$customer['FIRST_NAME'].' '.$customer['LAST_NAME'].'</option>';
+                                echo '<option value="'.$customer->ID.'">'.$customer->FIRST_NAME.' '.$customer->LAST_NAME.'</option>';
                             }
                             ?>
                         </select>
@@ -92,9 +102,9 @@
             <?php
             foreach($data['deals'] as $deal) {
                 echo '<tr>';
-                echo '<td>'.$deal['ID'].'</td>';
-                echo '<td>'.$deal['START_DATE'].'</td>';
-                echo '<td>'.$deal['FINISH_DATE'].'</td>';
+                echo '<td>'.$deal->ID.'</td>';
+                echo '<td>'.$deal->START_DATE.'</td>';
+                echo '<td>'.$deal->FINISH_DATE.'</td>';
                 echo '</tr>';
             }
             ?>

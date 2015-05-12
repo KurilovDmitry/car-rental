@@ -22,6 +22,7 @@ class Deals extends \core\controller {
         $data['deals'] = (new \models\deals())->getDeals();
 
         $data['car_properties'] = (new \models\cproperties())->getProperties();
+        $data['car_models'] = (new \models\cmodels())->getModels();
         $data['customers'] = (new \models\customers())->getAllCustomers();
 		
 		View::rendertemplate('header', $data);
@@ -67,7 +68,8 @@ class Deals extends \core\controller {
             'PROPERTIES' => $_POST['properties'],
             'START_DATE' => $_POST['startDate'],
             'RENT_DURATION' => $_POST['duration'],
-            'CUSTOMER_ID' => $_POST['customer']
+            'CUSTOMER_ID' => $_POST['customer'],
+            'MODEL_ID' => $_POST['carModel']
         );
 
         (new \models\preferences())->addPreference($preference);
