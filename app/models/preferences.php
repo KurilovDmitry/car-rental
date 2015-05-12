@@ -17,7 +17,7 @@ class preferences extends \core\model {
 
     // получить список заказов/предпочтений
     public function getPreferences() {
-        $this->_db->select("SELECT P.*, P_C.CLIENT_ID, GROUP_CONCAT(PROP.DESCRIPTION), GROUP_CONCAT(M.MODEL) FROM PREFERENCE P
+        $this->_db->select("SELECT P.*, P_C.CLIENT_ID, GROUP_CONCAT(PROP.DESCRIPTION) PROPERTIES, GROUP_CONCAT(M.MODEL) MODELS FROM PREFERENCE P
                             JOIN (
                               SELECT * FROM CLIENT_PREFERENCE
                             ) P_C
@@ -28,7 +28,7 @@ class preferences extends \core\model {
                               SELECT * FROM PROPERTY
                             ) PROP
                             JOIN (
-                              SELECT * FROM PROPERTY_MODEL
+                              SELECT * FROM PREFERENCE_MODEL
                             ) P_M
                             JOIN (
                               SELECT * FROM MODEL
@@ -42,7 +42,7 @@ class preferences extends \core\model {
     }
 
     public function getPreference($id) {
-        $this->_db->select("SELECT P.*, P_C.CLIENT_ID, GROUP_CONCAT(PROP.DESCRIPTION), GROUP_CONCAT(M.MODEL) FROM PREFERENCE P
+        $this->_db->select("SELECT P.*, P_C.CLIENT_ID, GROUP_CONCAT(PROP.DESCRIPTION) PROPERTIES, GROUP_CONCAT(M.MODEL) MODELS FROM PREFERENCE P
                             JOIN (
                               SELECT * FROM CLIENT_PREFERENCE
                             ) P_C
@@ -53,7 +53,7 @@ class preferences extends \core\model {
                               SELECT * FROM PROPERTY
                             ) PROP
                             JOIN (
-                              SELECT * FROM PROPERTY_MODEL
+                              SELECT * FROM PREFERENCE_MODEL
                             ) P_M
                             JOIN (
                               SELECT * FROM MODEL

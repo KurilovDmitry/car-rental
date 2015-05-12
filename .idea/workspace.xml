@@ -65,21 +65,21 @@
       <file leaf-file-name="preferences.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/models/preferences.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.45698926" vertical-offset="255" max-vertical-offset="1581">
-              <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+            <state vertical-scroll-proportion="-0.04735376" vertical-offset="816" max-vertical-offset="1581">
+              <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
               <folding>
-                <marker date="1431471890329" expanded="true" signature="325:1382" placeholder="SELECT P.*, ..PREFERENCE..." />
-                <marker date="1431471890329" expanded="true" signature="489:520" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
-                <marker date="1431471890329" expanded="true" signature="620:653" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
-                <marker date="1431471890329" expanded="true" signature="753:775" placeholder="SELECT * FRO..PROPERTY..." />
-                <marker date="1431471890329" expanded="true" signature="876:906" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
-                <marker date="1431471890329" expanded="true" signature="1006:1025" placeholder="SELECT * FRO..MODEL..." />
-                <marker date="1431471890329" expanded="true" signature="1462:2562" placeholder="SELECT P.*, ..PREFERENCE..." />
-                <marker date="1431471890329" expanded="true" signature="1626:1657" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
-                <marker date="1431471890329" expanded="true" signature="1757:1790" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
-                <marker date="1431471890329" expanded="true" signature="1890:1912" placeholder="SELECT * FRO..PROPERTY..." />
-                <marker date="1431471890329" expanded="true" signature="2013:2043" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
-                <marker date="1431471890329" expanded="true" signature="2143:2162" placeholder="SELECT * FRO..MODEL..." />
+                <marker date="1431472247574" expanded="true" signature="325:1400" placeholder="SELECT P.*, ..PREFERENCE..." />
+                <marker date="1431472247574" expanded="true" signature="507:538" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
+                <marker date="1431472247574" expanded="true" signature="638:671" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
+                <marker date="1431472247574" expanded="true" signature="771:793" placeholder="SELECT * FRO..PROPERTY..." />
+                <marker date="1431472247574" expanded="true" signature="894:924" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
+                <marker date="1431472247574" expanded="true" signature="1024:1043" placeholder="SELECT * FRO..MODEL..." />
+                <marker date="1431472247574" expanded="true" signature="1480:2598" placeholder="SELECT P.*, ..PREFERENCE..." />
+                <marker date="1431472247574" expanded="true" signature="1662:1693" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
+                <marker date="1431472247574" expanded="true" signature="1793:1826" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
+                <marker date="1431472247574" expanded="true" signature="1926:1948" placeholder="SELECT * FRO..PROPERTY..." />
+                <marker date="1431472247574" expanded="true" signature="2049:2079" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
+                <marker date="1431472247574" expanded="true" signature="2179:2198" placeholder="SELECT * FRO..MODEL..." />
               </folding>
             </state>
           </provider>
@@ -485,18 +485,18 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="47" max-vertical-offset="1360">
           <caret line="26" column="52" selection-start-line="26" selection-start-column="52" selection-end-line="26" selection-end-column="52" />
           <folding>
-            <marker date="1431471890329" expanded="true" signature="325:1382" placeholder="SELECT P.*, ..PREFERENCE..." />
-            <marker date="1431471890329" expanded="true" signature="489:520" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
-            <marker date="1431471890329" expanded="true" signature="620:653" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
-            <marker date="1431471890329" expanded="true" signature="753:775" placeholder="SELECT * FRO..PROPERTY..." />
-            <marker date="1431471890329" expanded="true" signature="876:906" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
-            <marker date="1431471890329" expanded="true" signature="1006:1025" placeholder="SELECT * FRO..MODEL..." />
-            <marker date="1431471890329" expanded="true" signature="1462:2562" placeholder="SELECT P.*, ..PREFERENCE..." />
-            <marker date="1431471890329" expanded="true" signature="1626:1657" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
-            <marker date="1431471890329" expanded="true" signature="1757:1790" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
-            <marker date="1431471890329" expanded="true" signature="1890:1912" placeholder="SELECT * FRO..PROPERTY..." />
-            <marker date="1431471890329" expanded="true" signature="2013:2043" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
-            <marker date="1431471890329" expanded="true" signature="2143:2162" placeholder="SELECT * FRO..MODEL..." />
+            <marker date="1431472247574" expanded="true" signature="325:1400" placeholder="SELECT P.*, ..PREFERENCE..." />
+            <marker date="1431472247574" expanded="true" signature="507:538" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
+            <marker date="1431472247574" expanded="true" signature="638:671" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
+            <marker date="1431472247574" expanded="true" signature="771:793" placeholder="SELECT * FRO..PROPERTY..." />
+            <marker date="1431472247574" expanded="true" signature="894:924" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
+            <marker date="1431472247574" expanded="true" signature="1024:1043" placeholder="SELECT * FRO..MODEL..." />
+            <marker date="1431472247574" expanded="true" signature="1480:2598" placeholder="SELECT P.*, ..PREFERENCE..." />
+            <marker date="1431472247574" expanded="true" signature="1662:1693" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
+            <marker date="1431472247574" expanded="true" signature="1793:1826" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
+            <marker date="1431472247574" expanded="true" signature="1926:1948" placeholder="SELECT * FRO..PROPERTY..." />
+            <marker date="1431472247574" expanded="true" signature="2049:2079" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
+            <marker date="1431472247574" expanded="true" signature="2179:2198" placeholder="SELECT * FRO..MODEL..." />
           </folding>
         </state>
       </provider>
@@ -791,21 +791,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/preferences.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45698926" vertical-offset="255" max-vertical-offset="1581">
-          <caret line="30" column="54" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+        <state vertical-scroll-proportion="-0.04735376" vertical-offset="816" max-vertical-offset="1581">
+          <caret line="52" column="52" selection-start-line="52" selection-start-column="52" selection-end-line="52" selection-end-column="52" />
           <folding>
-            <marker date="1431471890329" expanded="true" signature="325:1382" placeholder="SELECT P.*, ..PREFERENCE..." />
-            <marker date="1431471890329" expanded="true" signature="489:520" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
-            <marker date="1431471890329" expanded="true" signature="620:653" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
-            <marker date="1431471890329" expanded="true" signature="753:775" placeholder="SELECT * FRO..PROPERTY..." />
-            <marker date="1431471890329" expanded="true" signature="876:906" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
-            <marker date="1431471890329" expanded="true" signature="1006:1025" placeholder="SELECT * FRO..MODEL..." />
-            <marker date="1431471890329" expanded="true" signature="1462:2562" placeholder="SELECT P.*, ..PREFERENCE..." />
-            <marker date="1431471890329" expanded="true" signature="1626:1657" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
-            <marker date="1431471890329" expanded="true" signature="1757:1790" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
-            <marker date="1431471890329" expanded="true" signature="1890:1912" placeholder="SELECT * FRO..PROPERTY..." />
-            <marker date="1431471890329" expanded="true" signature="2013:2043" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
-            <marker date="1431471890329" expanded="true" signature="2143:2162" placeholder="SELECT * FRO..MODEL..." />
+            <marker date="1431472247574" expanded="true" signature="325:1400" placeholder="SELECT P.*, ..PREFERENCE..." />
+            <marker date="1431472247574" expanded="true" signature="507:538" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
+            <marker date="1431472247574" expanded="true" signature="638:671" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
+            <marker date="1431472247574" expanded="true" signature="771:793" placeholder="SELECT * FRO..PROPERTY..." />
+            <marker date="1431472247574" expanded="true" signature="894:924" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
+            <marker date="1431472247574" expanded="true" signature="1024:1043" placeholder="SELECT * FRO..MODEL..." />
+            <marker date="1431472247574" expanded="true" signature="1480:2598" placeholder="SELECT P.*, ..PREFERENCE..." />
+            <marker date="1431472247574" expanded="true" signature="1662:1693" placeholder="SELECT * FRO..CLIENT_PREFERENCE..." />
+            <marker date="1431472247574" expanded="true" signature="1793:1826" placeholder="SELECT * FRO..PREFERENCE_PROPERTY..." />
+            <marker date="1431472247574" expanded="true" signature="1926:1948" placeholder="SELECT * FRO..PROPERTY..." />
+            <marker date="1431472247574" expanded="true" signature="2049:2079" placeholder="SELECT * FRO..PREFERENCE_MODEL..." />
+            <marker date="1431472247574" expanded="true" signature="2179:2198" placeholder="SELECT * FRO..MODEL..." />
           </folding>
         </state>
       </provider>
