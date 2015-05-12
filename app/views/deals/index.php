@@ -16,14 +16,14 @@
                 <?php
                 foreach($data['preferences'] as $preference) {
                     echo '<tr>';
-                    echo '<td>'.$preference['ID'].'</td>';
-                    echo '<td>'.$preference['START_DATE'].'</td>';
-                    echo '<td>'.$preference['RENT_DURATION'].'</td>';
-                    echo '<td>'.$preference['PROPERTIES'].'</td>';
-                    echo '<td>'.$preference['Client_FirstName'].' '.$preference['Client_LastName'].'</td>';
+                    echo '<td>'.$preference->ID.'</td>';
+                    echo '<td>'.$preference->START_DATE.'</td>';
+                    echo '<td>'.$preference->RENT_DURATION.'</td>';
+                    echo '<td>'.$preference->PROPERTIES.'</td>';
+                    echo '<td>'.$preference->FIRST_NAME.' '.$preference->LAST_NAME.'</td>';
                     echo '<td>';
-                    if ($preference['DEAL_ID'] == NULL) {
-                        echo '<a href="/deals/add/?preference='.$preference['ID'].'" class="btn btn-success">Доб.сделку</a>';
+                    if ($preference->DEAL_ID == NULL) {
+                        echo '<a href="/deals/add/?preference='.$preference->ID.'" class="btn btn-success">Доб.сделку</a>';
                     }
                     else {
                         echo $preference['Deal_Id'];
