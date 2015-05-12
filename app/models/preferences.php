@@ -17,14 +17,28 @@ class preferences extends \core\model {
 
     // получить список заказов/предпочтений
     public function getPreferences() {
-        return array(array(
-            'ID' => '1',
-            'START_DATE' => '1.01.2001',
-            'RENT_DURATION' => 5,
-            'PROPERTIES' => 'Ля-ля, тополя, тудак-судак',
-            'Client_FirstName' => 'Сергей',
-            'Client_LastName' => 'Костров',
-            'DEAL_ID' => NULL));    // NULL если сделки еще нет
+        $this->_db->select("SELECT P.*, P_C.CLIENT_ID, GROUP_CONCAT(PROP.DESCRIPTION), GROUP_CONCAT(M.MODEL) FROM PREFERENCE P
+                            JOIN (
+                              SELECT * FROM CLIENT_PREFERENCE
+                            ) P_C
+                            JOIN (
+                              SELECT * FROM PREFERENCE_PROPERTY
+                            ) P_P
+                            JOIN (
+                              SELECT * FROM PROPERTY
+                            ) PROP
+                            JOIN (
+                              SELECT * FROM PROPERTY_MODEL
+                            ) P_M
+                            JOIN (
+                              SELECT * FROM MODEL
+                            ) M
+                            WHERE P.ID = P_C.PREFERENCE_ID
+                            AND P.ID = P_P.PREFERENCE_ID
+                            AND P_P.PROPERTY_ID = PROP.ID
+                            AND P.ID = P_M.PREFERENCE_ID
+                            AND P_M.MODEL_ID = M.ID
+                            GROUP BY P.ID");
     }
 
     public function getPreference($id) {
