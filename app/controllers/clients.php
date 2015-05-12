@@ -18,9 +18,10 @@ class Clients extends \core\controller{
         $data['nav_page'] = 'clients';
 		$data['title'] = 'Клиенты';
 
-        $data['all_customers'] = (new \models\customers())->getAllCustomers();
-        $data['regular_customers'] = (new \models\customers())->getRegularCustomers();
-        $data['most_profitable_customers'] = (new \models\customers())->getTheMostProfitableCustomers();
+        $customers = new \models\customers();
+        $data['all_customers'] = $customers->getAllCustomers();
+        $data['regular_customers'] = $customers->getRegularCustomers();
+        $data['most_profitable_customers'] = $customers->getTheMostProfitableCustomers();
 		
 		View::rendertemplate('header', $data);
 		View::render('clients/index', $data);
@@ -35,6 +36,7 @@ class Clients extends \core\controller{
             'PASSPORT' => $_POST['passport'],
             'PHONE_NUMBER' => $_POST['phoneNumber']
         );
-        (new \models\customers())->add($customer);
+        (new \models\customers())->addCustomer($customer);
+        header('Location: '.DIR.'clients');
     }
 }
