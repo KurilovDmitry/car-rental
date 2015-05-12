@@ -6,12 +6,8 @@ class cars extends \core\model {
         parent::__construct();
     }
 
-    public function getCars() {
-        return $this->_db->select('SELECT C.* FROM CAR C JOIN CAR_MODEL CM ON C.ID = CM.CAR_ID JOIN MODEL M ON CM.MODEL_ID = M.ID');
-    }
-
     public function getAllCars() {
-        return $this->_db->select('SELECT C.*, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION) FROM CAR C
+        return $this->_db->select('SELECT C.*, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION) PROPERTIES FROM CAR C
                                     JOIN (
                                     SELECT M.MODEL, CM.CAR_ID CAR_ID FROM MODEL M
                                     JOIN CAR_MODEL CM ON M.ID = CM.MODEL_ID
@@ -64,7 +60,7 @@ class cars extends \core\model {
     }
 
     public function getPopularCars() {
-        return $this->_db->select('SELECT C.*, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION) FROM CAR C
+        return $this->_db->select('SELECT C.*, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION) PROPERTIES FROM CAR C
                                     JOIN (
                                     SELECT M.MODEL, CM.CAR_ID CAR_ID FROM MODEL M
                                     JOIN CAR_MODEL CM ON M.ID = CM.MODEL_ID
@@ -89,7 +85,7 @@ class cars extends \core\model {
     }
 
     public function getCar($id) {
-        return $this->_db->select("SELECT C.*, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION) FROM CAR C
+        return $this->_db->select("SELECT C.*, QM.MODEL, GROUP_CONCAT(QP.DESCRIPTION) PROPERTIES FROM CAR C
                                     JOIN (
                                     SELECT M.MODEL, CM.CAR_ID CAR_ID FROM MODEL M
                                     JOIN CAR_MODEL CM ON M.ID = CM.MODEL_ID
