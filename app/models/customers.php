@@ -42,6 +42,6 @@ class customers extends \core\model {
                                     )');
     }
     public function addCustomer($customer) {
-
+        $this->_db->insert(CLIENT, $customer);
     }
 }
