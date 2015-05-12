@@ -17,7 +17,7 @@ class deals extends \core\model {
     }
 
     public function addDeal($deal) {
-        $this->_db->insert(DEAL, $deal);
+        return $this->_db->insert(DEAL, $deal);
     }
 
     public function updateDeal($deal) {
@@ -27,6 +27,6 @@ class deals extends \core\model {
                             'START_DATE' => $deal('START_DATE'),
                             'FINISH_DATE' => $deal('FINISH_DATE'));
         $where = array('ID' => $deal['ID']);
-        $this->_db->update(DEAL, $dealArray, $where);
+        return $this->_db->update(DEAL, $dealArray, $where);
     }
 }
