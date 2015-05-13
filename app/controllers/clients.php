@@ -36,6 +36,12 @@ class Clients extends \core\controller{
             'PASSPORT' => $_POST['passport'],
             'PHONE_NUMBER' => $_POST['phoneNumber']
         );
+
+        if (!$customer['FIRST_NAME']) { header('Location: '.DIR.'clients?error='.urlencode('Необходимо ввести имя')); return; }
+        if (!$customer['LAST_NAME']) { header('Location: '.DIR.'clients?error='.urlencode('Необходимо ввести фамилию')); return; }
+        if (!$customer['MIDDLE_NAME']) { header('Location: '.DIR.'clients?error='.urlencode('Необходимо ввести отчество')); return; }
+        if (!$customer['PHONE_NUMBER']) { header('Location: '.DIR.'clients?error='.urlencode('Необходимо телефон')); return; }
+
         (new \models\customers())->addCustomer($customer);
         header('Location: '.DIR.'clients');
     }

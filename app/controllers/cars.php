@@ -38,6 +38,11 @@ class Cars extends \core\controller{
             'MODEL_ID' => $_POST['carModel'],
             'COST' => $_POST['cost'],
         );
+
+        if (!$car['PROPERTIES']) { header('Location: '.DIR.'cars?error='.urlencode('Необходимо выбрать свойства')); return; }
+        if (!$car['MODEL_ID']) { header('Location: '.DIR.'cars?error='.urlencode('Необходимо выбрать модель')); return; }
+        if (!is_numeric($car['COST'])) { header('Location: '.DIR.'cars?error='.urlencode('Необходимо ввести стоимость')); return; }
+
         (new \models\cars())->addCar($car);
         header('Location: '.DIR.'cars');
     }

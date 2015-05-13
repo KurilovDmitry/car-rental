@@ -26,7 +26,7 @@
                         echo '<a href="/deals/add/?preference='.$preference->ID.'" class="btn btn-success">Доб.сделку</a>';
                     }
                     else {
-                        echo $preference['Deal_Id'];
+                        echo $preference->DEAL_ID;
                     }
                     echo '</td>';
                     echo '</tr>';
