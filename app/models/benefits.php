@@ -45,7 +45,8 @@ class benefits extends \core\model {
                                               WHERE C.ID = D.CLIENT_ID
                                               AND D.ID = P.DEAL_ID
                                               AND P.FINE_ID = F.ID
-                                              AND F.FINE_TYPE = "FINE"
+                                              AND (F.FINE_TYPE = "FINE_FOR_DELAY"
+                                                OR F.FINE_TYPE = "FINE_FOR_DAMAGE")
                                               GROUP BY C.ID
                                               HAVING COUNT(F.FINE_TYPE) = 1
                                             ) F,
