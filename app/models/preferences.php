@@ -17,57 +17,52 @@ class preferences extends \core\model {
 
     // получить список заказов/предпочтений
     public function getPreferences() {
-        return $this->_db->select("SELECT P.*, C.FIRST_NAME, C.LAST_NAME, GROUP_CONCAT(PROP.DESCRIPTION) PROPERTIES, GROUP_CONCAT(M.MODEL) MODELS, D.ID DEAL_ID FROM PREFERENCE P
-                            JOIN (
-                              SELECT * FROM CLIENT_PREFERENCE
-                            ) P_C
-                            JOIN (
-                              SELECT * FROM PREFERENCE_PROPERTY
-                            ) P_P
-                            JOIN (
-                              SELECT * FROM PROPERTY
-                            ) PROP
-                            JOIN (
-                              SELECT * FROM PREFERENCE_MODEL
-                            ) P_M
-                            JOIN (
-                              SELECT * FROM MODEL
-                            ) M
-                            JOIN CLIENT C ON C.ID = P_C.CLIENT_ID
-                            JOIN DEAL D ON D.PREFERENCE_ID = P.ID
-                            WHERE P.ID = P_C.PREFERENCE_ID
-                            AND P.ID = P_P.PREFERENCE_ID
-                            AND P_P.PROPERTY_ID = PROP.ID
-                            AND P.ID = P_M.PREFERENCE_ID
-                            AND P_M.MODEL_ID = M.ID
-                            GROUP BY P.ID");
+        return $this->_db->select("SELECT P.*, C.FIRST_NAME, C.LAST_NAME, PROPERTIES.ALLP AS PROPERTIES, MODELS.ALLM AS MODELS, D.ID AS DEAL_ID
+                                    FROM PREFERENCE P
+
+                                    LEFT JOIN CLIENT_PREFERENCE P_C ON P.ID = P_C.PREFERENCE_ID
+                                    LEFT JOIN CLIENT C ON C.ID = P_C.CLIENT_ID
+									LEFT JOIN DEAL D ON D.PREFERENCE_ID = P.ID
+
+                                    JOIN (SELECT P1.ID PREF_ID, GROUP_CONCAT(PROP.DESCRIPTION) ALLP
+                                          FROM PREFERENCE P1
+                                          JOIN PREFERENCE_PROPERTY P_P ON P1.ID = P_P.PREFERENCE_ID
+                                          JOIN PROPERTY PROP ON P_P.PROPERTY_ID = PROP.ID
+                                          GROUP BY P1.ID) PROPERTIES
+                                    ON P.ID = PROPERTIES.PREF_ID
+
+                                    JOIN (SELECT P2.ID PREF_ID, GROUP_CONCAT(M.MODEL) ALLM
+                                          FROM PREFERENCE P2
+                                          JOIN PREFERENCE_MODEL P_M ON P2.ID = P_M.PREFERENCE_ID
+                                          JOIN MODEL M ON P_M.MODEL_ID = M.ID
+                                          GROUP BY P2.ID) MODELS
+                                    ON P.ID = MODELS.PREF_ID");
     }
 
     public function getPreference($id) {
-        return $this->_db->select("SELECT P.*, C.FIRST_NAME, C.LAST_NAME, GROUP_CONCAT(PROP.DESCRIPTION) PROPERTIES, GROUP_CONCAT(M.MODEL) MODELS FROM PREFERENCE P
-                            JOIN (
-                              SELECT * FROM CLIENT_PREFERENCE
-                            ) P_C
-                            JOIN (
-                              SELECT * FROM PREFERENCE_PROPERTY
-                            ) P_P
-                            JOIN (
-                              SELECT * FROM PROPERTY
-                            ) PROP
-                            JOIN (
-                              SELECT * FROM PREFERENCE_MODEL
-                            ) P_M
-                            JOIN (
-                              SELECT * FROM MODEL
-                            ) M
-                            JOIN CLIENT C ON C.ID = P_C.CLIENT_ID
-                            WHERE P.ID = P_C.PREFERENCE_ID
-                            AND P.ID = P_P.PREFERENCE_ID
-                            AND P_P.PROPERTY_ID = PROP.ID
-                            AND P.ID = P_M.PREFERENCE_ID
-                            AND P_M.MODEL_ID = M.ID
-                            AND P.ID = $id
-                            GROUP BY P.ID");
+        return $this->_db->select("SELECT P.*, C.FIRST_NAME, C.LAST_NAME, PROPERTIES.ALLP AS PROPERTIES, MODELS.ALLM AS MODELS, D.ID AS DEAL_ID
+                                    FROM PREFERENCE P
+
+                                    LEFT JOIN CLIENT_PREFERENCE P_C ON P.ID = P_C.PREFERENCE_ID
+                                    LEFT JOIN CLIENT C ON C.ID = P_C.CLIENT_ID
+									LEFT JOIN DEAL D ON D.PREFERENCE_ID = P.ID
+
+                                    LEFT JOIN (SELECT P1.ID PREF_ID, GROUP_CONCAT(PROP.DESCRIPTION) ALLP
+                                          FROM PREFERENCE P1
+                                          JOIN PREFERENCE_PROPERTY P_P ON P1.ID = P_P.PREFERENCE_ID
+                                          JOIN PROPERTY PROP ON P_P.PROPERTY_ID = PROP.ID
+                                          GROUP BY P1.ID) PROPERTIES
+                                    ON P.ID = PROPERTIES.PREF_ID
+
+                                    LEFT JOIN (SELECT P2.ID PREF_ID, GROUP_CONCAT(M.MODEL) ALLM
+                                          FROM PREFERENCE P2
+                                          JOIN PREFERENCE_MODEL P_M ON P2.ID = P_M.PREFERENCE_ID
+                                          JOIN MODEL M ON P_M.MODEL_ID = M.ID
+                                          GROUP BY P2.ID) MODELS
+                                    ON P.ID = MODELS.PREF_ID
+
+                                    WHERE P.ID = $id
+                                    ");
     }
 
     public function addPreference($preference) {
