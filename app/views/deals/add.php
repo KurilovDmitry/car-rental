@@ -34,6 +34,6 @@
             </select>
         </div>
 
-        <button type="submit" class="btn btn-danger">Добавить</button>
+        <button type="submit" class="btn btn-default">Добавить</button>
     </form>
 </div>
