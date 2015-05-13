@@ -109,7 +109,7 @@
                 echo '<td>'.$deal->PREFERENCE_ID.'</td>';
                 echo '<td>';
                 if (!$deal->RETURN_DATE) {
-                    echo '<a href="/deals/returnCar/?dealId='.$deal->ID.'" class="btn btn-danger">Вернуть</a>';
+                    echo '<a href="/deals/return/?dealId='.$deal->ID.'" class="btn btn-danger">Вернуть</a>';
                 }
                 echo '</td>';
                 echo '</tr>';

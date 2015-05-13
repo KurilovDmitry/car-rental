@@ -3,18 +3,32 @@
 </div>
 
 <div class="row">
-    <form action="/deals/carReturned/" method="post">
+    <form action="/deals/returned/" method="post">
         <input type="hidden" name="dealId" value="<?=$data['dealId'] ?>" />
-        <div class="form-group">
-            <label for="fineType">Тип штрафа</label>
-            <select type="date" class="form-control" name="fineType" id="fineType">
-                <option value="0">Нет штрафа</option>
-                <option value="1">Предупреждение</option>
-                <option value="2">Штраф за нарушение сроков</option>
-                <option value="3">Штраф за ущерб:
-                    <input type="number" name="damageFineValue" value="100" />
-                </option>
-            </select>
+        <div class="radio">
+            <label>
+                <input type="radio" name="fineType" value="0" checked>
+                Нет штрафа
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="fineType" value="1">
+                Предупреждение
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="fineType" value="2">
+                Штраф за нарушение сроков
+            </label>
+        </div>
+        <div class="radio">
+            <label>
+                <input type="radio" name="fineType" value="3">
+                Штраф за ущерб:
+                <input type="number" name="damageFineValue" value="100" />
+            </label>
         </div>
 
         <button type="submit" class="btn btn-default">ОК</button>

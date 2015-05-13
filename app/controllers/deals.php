@@ -91,23 +91,24 @@ class Deals extends \core\controller {
     public function carReturned() {
         $dealId = $_POST['dealId'];     // id of deal
         $fineType = $_POST['fineType'];
+        $damageFineValue = $_POST['damageFineValue'];
         // 0 - no
         // 1 - warning
         // 2 - time
         // 3 - damage
 
-        $dealsModel = new \models\deals();
-        $deal = $dealsModel->getDeal($dealId);
-
-        $now = time();
-        $startDate = strtotime($deal->START_DATE);
-        $finishDate = strtotime($deal->FINISH_DATE);
-        $dealTime = $finishDate - $startDate;
-        $fineTime = $now - $finishDate;
-        $paymentModel = new \models\payment();
-        $paymentModel->addPayment();
-
-        $dealsModel->updateDeal($deal);
+//        $dealsModel = new \models\deals();
+//        $deal = $dealsModel->getDeal($dealId);
+//
+//        $now = time();
+//        $startDate = strtotime($deal->START_DATE);
+//        $finishDate = strtotime($deal->FINISH_DATE);
+//        $dealTime = $finishDate - $startDate;
+//        $fineTime = $now - $finishDate;
+//        $paymentModel = new \models\payment();
+//        $paymentModel->addPayment();
+//
+//        $dealsModel->updateDeal($deal);
 
         $data['totalPayment'] = 1000;   // including fine
         $data['fine'] = 100;
