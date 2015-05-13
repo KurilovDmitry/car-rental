@@ -76,4 +76,27 @@ class Deals extends \core\controller {
         (new \models\preferences())->addPreference($preference);
         header('Location: '.DIR.'deals');
     }
+
+    public function returnCar() {
+        $dealId = $_POST['dealId'];     // id of deal
+        $fineType = $_POST['fineType'];
+        // 0 - no
+        // 1 - warning
+        // 2 - time
+        // 3 - damage
+
+        $dealsModel = new \models\deals();
+        $deal = $dealsModel->getDeal($dealId);
+
+        // TODO: ...
+
+        $$dealsModel->updateDeal($deal);
+
+        $data['totalPayment'] = 1000;   // including fine
+        $data['fine'] = 100;
+
+        View::rendertemplate('header', $data);
+        View::render('deals/carReturned', $data);
+        View::rendertemplate('footer', $data);
+    }
 }
