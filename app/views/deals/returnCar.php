@@ -2,6 +2,10 @@
     <h2>Возврат автомобиля</h2>
 </div>
 
+<?php if ($_GET['error']) { ?>
+    <p class="bg-danger" style="padding: 15px;"><?=$_GET['error'] ?></p>
+<?php } ?>
+
 <div class="row">
     <form action="/deals/returned/" method="post">
         <input type="hidden" name="dealId" value="<?=$data['dealId'] ?>" />

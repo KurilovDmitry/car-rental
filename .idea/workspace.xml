@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8e3cb54-ec01-4ddf-bdd3-534658211736" name="Default" comment="Deals">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/benefits.php" afterPath="$PROJECT_DIR$/app/models/benefits.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deals/carReturned.php" afterPath="$PROJECT_DIR$/app/views/deals/carReturned.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/deals.php" afterPath="$PROJECT_DIR$/app/controllers/deals.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/deals.php" afterPath="$PROJECT_DIR$/app/models/deals.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/helpers/validate.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deals/add.php" afterPath="$PROJECT_DIR$/app/views/deals/add.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/cars.php" afterPath="$PROJECT_DIR$/app/models/cars.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cars/index.php" afterPath="$PROJECT_DIR$/app/views/cars/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/statistic/index.php" afterPath="$PROJECT_DIR$/app/views/statistic/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/statistic.php" afterPath="$PROJECT_DIR$/app/controllers/statistic.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/clients/index.php" afterPath="$PROJECT_DIR$/app/views/clients/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deals/index.php" afterPath="$PROJECT_DIR$/app/views/deals/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deals/returnCar.php" afterPath="$PROJECT_DIR$/app/views/deals/returnCar.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CarRental.iws" />
@@ -38,7 +38,38 @@
     <favorites_list name="CarRental" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="cars.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/cars.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.576923" vertical-offset="345" max-vertical-offset="833">
+              <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="data.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/helpers/data.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="27.653847" vertical-offset="719" max-vertical-offset="1207">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="validate.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/helpers/validate.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.1045082" vertical-offset="0" max-vertical-offset="488">
+              <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -60,7 +91,6 @@
         <option value="$PROJECT_DIR$/app/models/cproperties.php" />
         <option value="$PROJECT_DIR$/app/core/logger.php" />
         <option value="$PROJECT_DIR$/sitemap.txt" />
-        <option value="$PROJECT_DIR$/app/views/clients/index.php" />
         <option value="$PROJECT_DIR$/app/controllers/clients.php" />
         <option value="$PROJECT_DIR$/app/models/customers.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -68,17 +98,19 @@
         <option value="$PROJECT_DIR$/app/models/cars.php" />
         <option value="$PROJECT_DIR$/app/models/preferences.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/app/views/deals/index.php" />
-        <option value="$PROJECT_DIR$/app/views/deals/returnCar.php" />
-        <option value="$PROJECT_DIR$/app/views/deals/add.php" />
         <option value="$PROJECT_DIR$/dbinit.sql" />
-        <option value="$PROJECT_DIR$/app/views/cars/index.php" />
         <option value="$PROJECT_DIR$/app/views/deals/carReturned.php" />
         <option value="$PROJECT_DIR$/app/controllers/statistic.php" />
         <option value="$PROJECT_DIR$/app/models/benefits.php" />
         <option value="$PROJECT_DIR$/app/views/statistic/index.php" />
         <option value="$PROJECT_DIR$/app/models/deals.php" />
         <option value="$PROJECT_DIR$/app/controllers/deals.php" />
+        <option value="$PROJECT_DIR$/app/views/cars/index.php" />
+        <option value="$PROJECT_DIR$/app/views/clients/index.php" />
+        <option value="$PROJECT_DIR$/app/views/deals/add.php" />
+        <option value="$PROJECT_DIR$/app/views/deals/index.php" />
+        <option value="$PROJECT_DIR$/app/views/deals/returnCar.php" />
+        <option value="$PROJECT_DIR$/app/helpers/validate.php" />
       </list>
     </option>
   </component>
@@ -161,6 +193,42 @@
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarRental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarRental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarRental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CarRental" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -197,6 +265,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Sandbox\CarRental\app\helpers" />
       <recent name="E:\Sandbox\CarRental\app\views\deals" />
       <recent name="E:\Sandbox\CarRental\app\models" />
       <recent name="E:\Sandbox\CarRental\app\controllers" />
@@ -285,7 +354,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279483" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -294,8 +363,8 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25622255" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33070865" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25622255" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14645669" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -352,7 +421,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1768">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#1318#1340#0#HTML" expanded="true" />
+            <element signature="e#1542#1564#0#HTML" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -411,26 +483,26 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT AVG(D..COUNT..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..DEAL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT AVG(D..COUNT..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..DEAL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
           </folding>
         </state>
       </provider>
@@ -440,26 +512,26 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="289">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT AVG(D..COUNT..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..DEAL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT AVG(D..COUNT..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..DEAL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
           </folding>
         </state>
       </provider>
@@ -562,16 +634,6 @@
         <state vertical-scroll-proportion="0.17" vertical-offset="0" max-vertical-offset="500">
           <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/clients/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-27.0" vertical-offset="760" max-vertical-offset="1683">
-          <caret line="86" column="33" selection-start-line="0" selection-start-column="0" selection-end-line="93" selection-end-column="2" />
-          <folding>
-            <element signature="e#1217#1239#0#HTML" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -685,80 +747,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deals/returnCar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9541779" vertical-offset="122" max-vertical-offset="697">
-          <caret line="28" column="31" selection-start-line="28" selection-start-column="31" selection-end-line="28" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deals/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.3207548" vertical-offset="1397" max-vertical-offset="2125">
-          <caret line="111" column="48" selection-start-line="111" selection-start-column="48" selection-end-line="111" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deals/add.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6334232" vertical-offset="377" max-vertical-offset="748">
-          <caret line="36" column="52" selection-start-line="36" selection-start-column="52" selection-end-line="36" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/cars.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.4615383" vertical-offset="232" max-vertical-offset="833">
-          <caret line="23" column="54" selection-start-line="23" selection-start-column="54" selection-end-line="23" selection-end-column="54" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/cars.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.4097035" vertical-offset="276" max-vertical-offset="2091">
           <caret line="47" column="43" selection-start-line="47" selection-start-column="43" selection-end-line="47" selection-end-column="43" />
           <folding>
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT AVG(D..COUNT..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..DEAL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431511663481" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT AVG(D..COUNT..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..DEAL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431513675558" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cars/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.8547486" vertical-offset="0" max-vertical-offset="1768">
-          <caret line="18" column="59" selection-start-line="18" selection-start-column="59" selection-end-line="18" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/deals/carReturned.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5040431" vertical-offset="0" max-vertical-offset="371">
-          <caret line="11" column="59" selection-start-line="11" selection-start-column="59" selection-end-line="11" selection-end-column="59" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -834,14 +848,94 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/cars/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3207547" vertical-offset="442" max-vertical-offset="1819">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="36" selection-end-column="14" />
+          <folding>
+            <element signature="e#1318#1340#0#HTML" expanded="true" />
+            <element signature="e#1542#1564#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/clients/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.20391062" vertical-offset="454" max-vertical-offset="1734">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding>
+            <element signature="e#1117#1139#0#HTML" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deals/add.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3207547" vertical-offset="0" max-vertical-offset="799">
+          <caret line="7" column="14" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deals/carReturned.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18328841" vertical-offset="0" max-vertical-offset="371">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deals/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.45822102" vertical-offset="510" max-vertical-offset="2176">
+          <caret line="40" column="22" selection-start-line="40" selection-start-column="22" selection-end-line="40" selection-end-column="22" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/deals/returnCar.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3207547" vertical-offset="0" max-vertical-offset="765">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/statistic/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.3207547" vertical-offset="0" max-vertical-offset="371">
           <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#dt#0;n#dl#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#dd#0;n#dl#0;n#!!top" expanded="true" />
-          </folding>
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/cars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.576923" vertical-offset="345" max-vertical-offset="833">
+          <caret line="39" column="10" selection-start-line="39" selection-start-column="10" selection-end-line="39" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/data.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="27.653847" vertical-offset="719" max-vertical-offset="1207">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/validate.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1045082" vertical-offset="0" max-vertical-offset="488">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

@@ -32,6 +32,9 @@
 </div>
 
 <div class="row">
+    <?php if ($_GET['error']) { ?>
+        <p class="bg-danger" style="padding: 15px;"><?=$_GET['error'] ?></p>
+    <?php } ?>
     <a href="#clientForm" data-toggle="collapse" class="btn btn-default">Добавить авто <span class="caret"></span></a>
     <div class="collapse" id="clientForm" style="margin-top:2em">
         <form action="/cars/add/" method="post">

@@ -36,6 +36,9 @@
         </div>
 
         <div class="row">
+            <?php if ($_GET['error']) { ?>
+                <p class="bg-danger" style="padding: 15px;"><?=$_GET['error'] ?></p>
+            <?php } ?>
             <a href="#dealForm" data-toggle="collapse" class="btn btn-default">Новый заказ <span class="caret"></span></a>
             <div class="collapse" id="dealForm" style="margin-top:2em">
                 <form action="/deals/addPreference/" method="post">

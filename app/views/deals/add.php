@@ -3,6 +3,9 @@
 </div>
 
 <div class="row">
+    <?php if ($_GET['error']) { ?>
+        <p class="bg-danger" style="padding: 15px;"><?=$_GET['error'] ?></p>
+    <?php } ?>
     <form action="/deals/add/" method="post">
         <input type="hidden" name="preference" value="<?=$data['preference']->ID ?>" />
         <div class="form-group">
