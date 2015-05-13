@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8e3cb54-ec01-4ddf-bdd3-534658211736" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/fine.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbinit.sql" afterPath="$PROJECT_DIR$/dbinit.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/deals.php" afterPath="$PROJECT_DIR$/app/controllers/deals.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/deals.php" afterPath="$PROJECT_DIR$/app/models/deals.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/cars.php" afterPath="$PROJECT_DIR$/app/models/cars.php" />
     </list>
     <ignored path="CarRental.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -56,13 +52,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deals.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="deals.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/deals.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13023256" vertical-offset="2352" max-vertical-offset="2703">
+            <state vertical-scroll-proportion="-1.0769231" vertical-offset="2352" max-vertical-offset="2703">
               <caret line="140" column="38" selection-start-line="140" selection-start-column="38" selection-end-line="140" selection-end-column="38" />
               <folding>
                 <element signature="e#29#43#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cars.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/models/cars.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.9324056" vertical-offset="534" max-vertical-offset="2125">
+              <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+              <folding>
+                <marker date="1431512279649" expanded="true" signature="196:951" placeholder="SELECT C.*, ..CAR..." />
+                <marker date="1431512279649" expanded="true" signature="348:469" placeholder="SELECT M.MOD..MODEL..." />
+                <marker date="1431512279649" expanded="true" signature="593:741" placeholder="SELECT P.DES..PROPERTY..." />
+                <marker date="1431512279649" expanded="true" signature="1035:2100" placeholder="SELECT C.*, ..CAR..." />
+                <marker date="1431512279649" expanded="true" signature="1189:1312" placeholder="SELECT M.MOD..MODEL..." />
+                <marker date="1431512279649" expanded="true" signature="1438:1588" placeholder="SELECT P.DES..PROPERTY..." />
+                <marker date="1431512279649" expanded="true" signature="1837:2012" placeholder="SELECT D.CAR..DEAL..." />
+                <marker date="1431512279649" expanded="true" signature="1903:1946" placeholder="/*WHERE D.FI..." />
+                <marker date="1431512279649" expanded="true" signature="2187:3256" placeholder="SELECT C.*, ..CAR..." />
+                <marker date="1431512279649" expanded="true" signature="2341:2464" placeholder="SELECT M.MOD..MODEL..." />
+                <marker date="1431512279649" expanded="true" signature="2590:2740" placeholder="SELECT P.DES..PROPERTY..." />
+                <marker date="1431512279649" expanded="true" signature="2993:3168" placeholder="SELECT D.CAR..DEAL..." />
+                <marker date="1431512279649" expanded="true" signature="3059:3102" placeholder="/*WHERE D.FI..." />
+                <marker date="1431512279649" expanded="true" signature="3341:4684" placeholder="SELECT C.*, ..CAR..." />
+                <marker date="1431512279649" expanded="true" signature="3493:3614" placeholder="SELECT M.MOD..MODEL..." />
+                <marker date="1431512279649" expanded="true" signature="3738:3886" placeholder="SELECT P.DES..PROPERTY..." />
+                <marker date="1431512279649" expanded="true" signature="4137:4646" placeholder="SELECT D.CAR..DEAL..." />
+                <marker date="1431512279649" expanded="true" signature="4330:4604" placeholder="SELECT AVG(D..COUNT..." />
+                <marker date="1431512279649" expanded="true" signature="4408:4547" placeholder="SELECT COUNT..DEAL..." />
+                <marker date="1431512279649" expanded="true" signature="4764:5571" placeholder="SELECT C.*, ..CAR..." />
+                <marker date="1431512279649" expanded="true" signature="4916:5037" placeholder="SELECT M.MOD..MODEL..." />
+                <marker date="1431512279649" expanded="true" signature="5161:5309" placeholder="SELECT P.DES..PROPERTY..." />
               </folding>
             </state>
           </provider>
@@ -128,12 +157,12 @@
         <option value="$PROJECT_DIR$/app/views/deals/index.php" />
         <option value="$PROJECT_DIR$/app/models/preferences.php" />
         <option value="$PROJECT_DIR$/app/models/benefits.php" />
-        <option value="$PROJECT_DIR$/app/models/cars.php" />
         <option value="$PROJECT_DIR$/app/models/payment.php" />
         <option value="$PROJECT_DIR$/dbinit.sql" />
         <option value="$PROJECT_DIR$/app/models/fine.php" />
         <option value="$PROJECT_DIR$/app/models/deals.php" />
         <option value="$PROJECT_DIR$/app/controllers/deals.php" />
+        <option value="$PROJECT_DIR$/app/models/cars.php" />
       </list>
     </option>
   </component>
@@ -356,7 +385,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -367,7 +396,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2532943" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.577044" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.12421384" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -508,26 +537,28 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT AVG(D..COUNT..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..DEAL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431512279649" expanded="true" signature="196:951" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431512279649" expanded="true" signature="348:469" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431512279649" expanded="true" signature="593:741" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431512279649" expanded="true" signature="1035:2100" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431512279649" expanded="true" signature="1189:1312" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431512279649" expanded="true" signature="1438:1588" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431512279649" expanded="true" signature="1837:2012" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431512279649" expanded="true" signature="1903:1946" placeholder="/*WHERE D.FI..." />
+            <marker date="1431512279649" expanded="true" signature="2187:3256" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431512279649" expanded="true" signature="2341:2464" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431512279649" expanded="true" signature="2590:2740" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431512279649" expanded="true" signature="2993:3168" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431512279649" expanded="true" signature="3059:3102" placeholder="/*WHERE D.FI..." />
+            <marker date="1431512279649" expanded="true" signature="3341:4684" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431512279649" expanded="true" signature="3493:3614" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431512279649" expanded="true" signature="3738:3886" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431512279649" expanded="true" signature="4137:4646" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431512279649" expanded="true" signature="4330:4604" placeholder="SELECT AVG(D..COUNT..." />
+            <marker date="1431512279649" expanded="true" signature="4408:4547" placeholder="SELECT COUNT..DEAL..." />
+            <marker date="1431512279649" expanded="true" signature="4764:5571" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431512279649" expanded="true" signature="4916:5037" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431512279649" expanded="true" signature="5161:5309" placeholder="SELECT P.DES..PROPERTY..." />
           </folding>
         </state>
       </provider>
@@ -537,26 +568,28 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="289">
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT AVG(D..COUNT..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..DEAL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431512279649" expanded="true" signature="196:951" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431512279649" expanded="true" signature="348:469" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431512279649" expanded="true" signature="593:741" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431512279649" expanded="true" signature="1035:2100" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431512279649" expanded="true" signature="1189:1312" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431512279649" expanded="true" signature="1438:1588" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431512279649" expanded="true" signature="1837:2012" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431512279649" expanded="true" signature="1903:1946" placeholder="/*WHERE D.FI..." />
+            <marker date="1431512279649" expanded="true" signature="2187:3256" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431512279649" expanded="true" signature="2341:2464" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431512279649" expanded="true" signature="2590:2740" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431512279649" expanded="true" signature="2993:3168" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431512279649" expanded="true" signature="3059:3102" placeholder="/*WHERE D.FI..." />
+            <marker date="1431512279649" expanded="true" signature="3341:4684" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431512279649" expanded="true" signature="3493:3614" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431512279649" expanded="true" signature="3738:3886" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431512279649" expanded="true" signature="4137:4646" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431512279649" expanded="true" signature="4330:4604" placeholder="SELECT AVG(D..COUNT..." />
+            <marker date="1431512279649" expanded="true" signature="4408:4547" placeholder="SELECT COUNT..DEAL..." />
+            <marker date="1431512279649" expanded="true" signature="4764:5571" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431512279649" expanded="true" signature="4916:5037" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431512279649" expanded="true" signature="5161:5309" placeholder="SELECT P.DES..PROPERTY..." />
           </folding>
         </state>
       </provider>
@@ -817,35 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/cars.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33023256" vertical-offset="82" max-vertical-offset="2091">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding>
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT D.CAR..DEAL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT AVG(D..COUNT..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..DEAL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT C.*, ..CAR..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT M.MOD..MODEL..." />
-            <marker date="1431479315319" expanded="true" signature="-1:-1" placeholder="SELECT P.DES..PROPERTY..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dbinit.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.68" vertical-offset="2057" max-vertical-offset="3179">
@@ -901,10 +905,41 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/deals.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13023256" vertical-offset="2352" max-vertical-offset="2703">
+        <state vertical-scroll-proportion="-1.0769231" vertical-offset="2352" max-vertical-offset="2703">
           <caret line="140" column="38" selection-start-line="140" selection-start-column="38" selection-end-line="140" selection-end-column="38" />
           <folding>
             <element signature="e#29#43#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/cars.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9324056" vertical-offset="534" max-vertical-offset="2125">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <marker date="1431512279649" expanded="true" signature="196:951" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431512279649" expanded="true" signature="348:469" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431512279649" expanded="true" signature="593:741" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431512279649" expanded="true" signature="1035:2100" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431512279649" expanded="true" signature="1189:1312" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431512279649" expanded="true" signature="1438:1588" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431512279649" expanded="true" signature="1837:2012" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431512279649" expanded="true" signature="1903:1946" placeholder="/*WHERE D.FI..." />
+            <marker date="1431512279649" expanded="true" signature="2187:3256" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431512279649" expanded="true" signature="2341:2464" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431512279649" expanded="true" signature="2590:2740" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431512279649" expanded="true" signature="2993:3168" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431512279649" expanded="true" signature="3059:3102" placeholder="/*WHERE D.FI..." />
+            <marker date="1431512279649" expanded="true" signature="3341:4684" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431512279649" expanded="true" signature="3493:3614" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431512279649" expanded="true" signature="3738:3886" placeholder="SELECT P.DES..PROPERTY..." />
+            <marker date="1431512279649" expanded="true" signature="4137:4646" placeholder="SELECT D.CAR..DEAL..." />
+            <marker date="1431512279649" expanded="true" signature="4330:4604" placeholder="SELECT AVG(D..COUNT..." />
+            <marker date="1431512279649" expanded="true" signature="4408:4547" placeholder="SELECT COUNT..DEAL..." />
+            <marker date="1431512279649" expanded="true" signature="4764:5571" placeholder="SELECT C.*, ..CAR..." />
+            <marker date="1431512279649" expanded="true" signature="4916:5037" placeholder="SELECT M.MOD..MODEL..." />
+            <marker date="1431512279649" expanded="true" signature="5161:5309" placeholder="SELECT P.DES..PROPERTY..." />
           </folding>
         </state>
       </provider>
