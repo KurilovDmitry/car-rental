@@ -35,7 +35,7 @@ class cars extends \core\model {
                                     AND C.ID = QP.CAR_ID
                                     AND C.ID IN (
                                       SELECT D.CAR_ID FROM DEAL D
-                                      WHERE D.FINISH_DATE < CURRENT_TIMESTAMP
+                                      WHERE D.FINISH_DATE > CURRENT_TIMESTAMP
                                     )
                                     GROUP BY C.ID');
     }

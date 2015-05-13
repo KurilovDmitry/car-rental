@@ -90,6 +90,7 @@ class Deals extends \core\controller {
 
     public function carReturned() {
         $dealId = $_POST['dealId'];     // id of deal
+//        $fineType = $_POST['fine-0'] == 1 ? 0 : ($_POST['fine-1'] == 1 ? 1 : ($_POST['fine-2'] == 1 ? 2 : 3));
         $fineType = $_POST['fineType'];
         $damageFineValue = $_POST['damageFineValue'];
         // 0 - no
@@ -97,21 +98,44 @@ class Deals extends \core\controller {
         // 2 - time
         // 3 - damage
 
-//        $dealsModel = new \models\deals();
-//        $deal = $dealsModel->getDeal($dealId);
-//
-//        $now = time();
-//        $startDate = strtotime($deal->START_DATE);
-//        $finishDate = strtotime($deal->FINISH_DATE);
-//        $dealTime = $finishDate - $startDate;
-//        $fineTime = $now - $finishDate;
-//        $paymentModel = new \models\payment();
-//        $paymentModel->addPayment();
-//
-//        $dealsModel->updateDeal($deal);
+        $dealsModel = new \models\deals();
+        $deal = $dealsModel->getDeal($dealId);
+        $deal->RETURN_DATE = time();
 
-        $data['totalPayment'] = 1000;   // including fine
-        $data['fine'] = 100;
+        $carModel = new \models\cars();
+        $car = $carModel->getCar($deal->CAR_ID);
+        $carCost = $car->COST;
+
+
+        // TODO: ...
+        $returnDate = $deal->RETURN_DATE;
+        $startDate = $deal->START_DATE;
+        $finishDate = $deal->FINISH_DATE;
+        $dealTime = $finishDate - $startDate;
+        $fineTime = $returnDate - $finishDate;
+        $finalCost = $dealTime * $carCost;
+        $fineCost = 0;
+        if ($fineType > 2) {
+            $fineCost += $damageFineValue;
+        } elseif ($fineType > 1) {
+            $fineCost += $fineTime * $carCost * 0.1;
+        }
+        $finalCost += $finalCost;
+
+        if ($fineType = 0) {
+            $fineType = NULL;
+        }
+        $payment = array('DEAL_ID' => $dealId,
+                            'FINE_ID' => $fineType,
+                            "FINAL_COST => $finalCost");
+
+        $paymentModel = new \models\payment();
+        $paymentModel->addPayment($payment);
+
+        $dealsModel->updateDeal($deal);
+
+        $data['totalPayment'] = $finalCost;   // including fine
+        $data['fine'] = $fineCost;
 
         $data['title'] = 'Возврат автомобиля';
 
