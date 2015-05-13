@@ -128,12 +128,11 @@ class Deals extends \core\controller {
         $fineTime = $returnDate - $finishDate;
         $finalCost = $dealTime * $carCost / 60 / 60 / 24;
         $fineCost = 0;
-        if ($fineTime > 0) {
-            if ($fineType > 2) {
-                $fineCost += $damageFineValue;
-            } elseif ($fineType > 1) {
-                $fineCost += $fineTime * $carCost * 0.1 / 60 / 60 / 24;
-            }
+
+        if ($fineType > 2) {
+            $fineCost += $damageFineValue;
+        } elseif ($fineTime > 0 && $fineType > 1) {
+            $fineCost += $fineTime * $carCost * 0.1 / 60 / 60 / 24;
         }
         $finalCost += $fineCost;
 
