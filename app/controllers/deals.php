@@ -89,8 +89,15 @@ class Deals extends \core\controller {
         $deal = $dealsModel->getDeal($dealId);
 
         // TODO: ...
+        $now = time();
+        $startDate = strtotime($deal->START_DATE);
+        $finishDate = strtotime($deal->FINISH_DATE);
+        $dealTime = $finishDate - $startDate;
+        $fineTime = $now - $finishDate;
+        $paymentModel = new \models\payment();
+        $paymentModel->addPayment();
 
-        $$dealsModel->updateDeal($deal);
+        $dealsModel->updateDeal($deal);
 
         $data['totalPayment'] = 1000;   // including fine
         $data['fine'] = 100;
