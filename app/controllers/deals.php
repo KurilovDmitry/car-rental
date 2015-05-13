@@ -115,10 +115,12 @@ class Deals extends \core\controller {
         $fineTime = $returnDate - $finishDate;
         $finalCost = $dealTime * $carCost / 60 / 60 / 24;
         $fineCost = 0;
-        if ($fineType > 2) {
-            $fineCost += $damageFineValue;
-        } elseif ($fineType > 1) {
-            $fineCost += $fineTime * $carCost * 0.1 / 60 / 60 / 24;
+        if ($fineTime > 0) {
+            if ($fineType > 2) {
+                $fineCost += $damageFineValue;
+            } elseif ($fineType > 1) {
+                $fineCost += $fineTime * $carCost * 0.1 / 60 / 60 / 24;
+            }
         }
         $finalCost += $fineCost;
 
@@ -129,7 +131,10 @@ class Deals extends \core\controller {
         $fineModel = new \models\fine();
         $fine = array('FINE_TYPE' => $fineType,
                         'FINE_COST' => $fineCost);
-        $fineId = $fineModel->addFine($fine);
+        $fineId = NULL;
+        if ($fineType != NULL) {
+            $fineId = $fineModel->addFine($fine);
+        }
 
         $payment = array('DEAL_ID' => $dealId,
                             'FINE_ID' => $fineId,
