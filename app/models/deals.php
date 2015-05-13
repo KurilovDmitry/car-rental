@@ -25,7 +25,8 @@ class deals extends \core\model {
                             'CLIENT_ID' => $deal['CLIENT_ID'],
                             'PREFERENCE_ID' => $deal['PREFERENCE_ID'],
                             'START_DATE' => $deal('START_DATE'),
-                            'FINISH_DATE' => $deal('FINISH_DATE'));
+                            'FINISH_DATE' => $deal('FINISH_DATE'),
+                            'RETURN_DATE' => $deal('RETURN_DATE'));
         $where = array('ID' => $deal['ID']);
         return $this->_db->update(DEAL, $dealArray, $where);
     }

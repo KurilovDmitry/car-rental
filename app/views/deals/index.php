@@ -97,6 +97,7 @@
                 <th>Начало проката</th>
                 <th>Конец проката</th>
                 <th>Заказ</th>
+                <th>Возврат</th>
             </tr>
             </thead>
             <?php
@@ -106,6 +107,11 @@
                 echo '<td>'.$deal->START_DATE.'</td>';
                 echo '<td>'.$deal->FINISH_DATE.'</td>';
                 echo '<td>'.$deal->PREFERENCE_ID.'</td>';
+                echo '<td>';
+                if (!$deal->RETURN_DATE) {
+                    echo '<a href="/deals/returnCar/?dealId='.$deal->ID.'" class="btn btn-danger">Вернуть</a>';
+                }
+                echo '</td>';
                 echo '</tr>';
             }
             ?>

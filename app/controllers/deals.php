@@ -78,6 +78,17 @@ class Deals extends \core\controller {
     }
 
     public function returnCar() {
+        $data['title'] = 'Возврат автомобиля';
+
+        $dealId = $_GET['dealId'];     // id of deal
+        $data['dealId'] = $dealId;
+
+        View::rendertemplate('header', $data);
+        View::render('deals/returnCar', $data);
+        View::rendertemplate('footer', $data);
+    }
+
+    public function carReturned() {
         $dealId = $_POST['dealId'];     // id of deal
         $fineType = $_POST['fineType'];
         // 0 - no
@@ -90,10 +101,12 @@ class Deals extends \core\controller {
 
         // TODO: ...
 
-        $$dealsModel->updateDeal($deal);
+        $dealsModel->updateDeal($deal);
 
         $data['totalPayment'] = 1000;   // including fine
         $data['fine'] = 100;
+
+        $data['title'] = 'Возврат автомобиля';
 
         View::rendertemplate('header', $data);
         View::render('deals/carReturned', $data);

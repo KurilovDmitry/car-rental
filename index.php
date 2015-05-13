@@ -68,6 +68,8 @@ Router::any('', '\controllers\deals@index');
 Router::any('/deals', '\controllers\deals@index');
 Router::any('/deals/addPreference', '\controllers\deals@addPreference');
 Router::any('/deals/add', '\controllers\deals@add');
+Router::any('/deals/return', '\controllers\deals@returnCar');
+Router::any('/deals/returned', '\controllers\deals@carReturned');
 
 Router::any('/cars', '\controllers\cars@index');
 Router::any('/cars/add', '\controllers\cars@add');
