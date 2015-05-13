@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="a8e3cb54-ec01-4ddf-bdd3-534658211736" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/models/payment.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/cars.php" afterPath="$PROJECT_DIR$/app/models/cars.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbinit.sql" afterPath="$PROJECT_DIR$/dbinit.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/deals.php" afterPath="$PROJECT_DIR$/app/controllers/deals.php" />
-    </list>
+    <list default="true" id="a8e3cb54-ec01-4ddf-bdd3-534658211736" name="Default" comment="" />
     <ignored path="CarRental.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
@@ -48,8 +43,8 @@
       <file leaf-file-name="deals.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/deals.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.9230769" vertical-offset="1309" max-vertical-offset="2363">
-              <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+            <state vertical-scroll-proportion="-13.0" vertical-offset="1821" max-vertical-offset="2363">
+              <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
               <folding>
                 <element signature="e#29#43#0#PHP" expanded="true" />
               </folding>
@@ -328,7 +323,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32704404" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -850,8 +845,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/deals.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769" vertical-offset="1309" max-vertical-offset="2363">
-          <caret line="83" column="39" selection-start-line="83" selection-start-column="39" selection-end-line="83" selection-end-column="39" />
+        <state vertical-scroll-proportion="-13.0" vertical-offset="1821" max-vertical-offset="2363">
+          <caret line="127" column="0" selection-start-line="127" selection-start-column="0" selection-end-line="127" selection-end-column="0" />
           <folding>
             <element signature="e#29#43#0#PHP" expanded="true" />
           </folding>
