@@ -19,8 +19,9 @@ class Statistic extends \core\controller{
 		$data['title'] = 'Статистика';
 
         $benefits = new \models\benefits();
-        $date['total_revenue'] = $benefits->getTotalCash();
-        $date['fine_quality'] = $benefits->testPunishmentSystem();
+        $data['total_revenue'] = $benefits->getTotalCash()[0]->TOTAL;
+        $data['fine_quality_1'] = $benefits->testPunishmentSystem()[0]->COUNT1;
+        $data['fine_quality_2'] = $benefits->testPunishmentSystem()[0]->COUNT2;
 		
 		View::rendertemplate('header', $data);
 		View::render('statistic/index', $data);

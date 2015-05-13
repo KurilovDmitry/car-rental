@@ -106,8 +106,6 @@ class Deals extends \core\controller {
         $car = $carModel->getCar($deal->CAR_ID)[0];
         $carCost = $car->COST;
 
-
-        // TODO: ...
         $returnDate = $deal->RETURN_DATE;
         $startDate = strtotime($deal->START_DATE);
         $finishDate = strtotime($deal->FINISH_DATE);
@@ -138,8 +136,10 @@ class Deals extends \core\controller {
         $paymentModel = new \models\payment();
         $paymentModel->addPayment($payment);
 
-        $dealsModel->updateDeal(array(
-            'RETURN_DATE '=> date('Y-m-d G:i:s', $deal->RETURN_DATE)));
+        $dealsModel->updateDeal(
+            $dealId,
+            array(
+            'RETURN_DATE'=> date('Y-m-d G:i:s', $deal->RETURN_DATE)));
 
         $data['totalPayment'] = $finalCost;   // including fine
         $data['fine'] = $fineCost;

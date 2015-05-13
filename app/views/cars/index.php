@@ -5,9 +5,9 @@
     <!-- Nav tabs -->
     <ul class="nav nav-tabs" role="tablist">
         <li role="presentation" class="active"><a href="#all" aria-controls="all" role="tab" data-toggle="tab">Все</a></li>
-        <li role="presentation"><a href="#regular" aria-controls="regular" role="tab" data-toggle="tab">Популярные</a></li>
-        <li role="presentation"><a href="#most-profitable" aria-controls="most-profitable" role="tab" data-toggle="tab">В прокате</a></li>
-        <li role="presentation"><a href="#most-profitable" aria-controls="most-profitable" role="tab" data-toggle="tab">Не в прокате</a></li>
+        <li role="presentation"><a href="#popular" aria-controls="popular" role="tab" data-toggle="tab">Популярные</a></li>
+        <li role="presentation"><a href="#rented" aria-controls="rented" role="tab" data-toggle="tab">В прокате</a></li>
+        <li role="presentation"><a href="#not-rented" aria-controls="not-rented" role="tab" data-toggle="tab">Не в прокате</a></li>
     </ul>
 
     <!-- Tab panes -->
