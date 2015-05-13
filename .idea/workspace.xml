@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8e3cb54-ec01-4ddf-bdd3-534658211736" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/deals/carReturned.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/deals/returnCar.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/benefits.php" afterPath="$PROJECT_DIR$/app/models/benefits.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dbinit.sql" afterPath="$PROJECT_DIR$/dbinit.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/deals.php" afterPath="$PROJECT_DIR$/app/controllers/deals.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/models/deals.php" afterPath="$PROJECT_DIR$/app/models/deals.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/deals/index.php" afterPath="$PROJECT_DIR$/app/views/deals/index.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CarRental.iws" />
@@ -48,11 +45,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="deals.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="deals.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/controllers/deals.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.076923" vertical-offset="1533" max-vertical-offset="2057">
-              <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
+            <state vertical-scroll-proportion="0.6415094" vertical-offset="1581" max-vertical-offset="2159">
+              <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
               <folding>
                 <element signature="e#29#43#0#PHP" expanded="true" />
               </folding>
@@ -73,11 +70,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbinit.sql" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dbinit.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dbinit.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.22849463" vertical-offset="0" max-vertical-offset="3162">
-              <caret line="5" column="6" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="6" />
+            <state vertical-scroll-proportion="-3.4" vertical-offset="17" max-vertical-offset="3179">
+              <caret line="6" column="6" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="6" />
               <folding />
             </state>
           </provider>
@@ -126,7 +123,6 @@
         <option value="$PROJECT_DIR$/app/core/logger.php" />
         <option value="$PROJECT_DIR$/sitemap.txt" />
         <option value="$PROJECT_DIR$/app/views/clients/index.php" />
-        <option value="$PROJECT_DIR$/dbinit.sql" />
         <option value="$PROJECT_DIR$/app/controllers/clients.php" />
         <option value="$PROJECT_DIR$/app/models/customers.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
@@ -139,10 +135,11 @@
         <option value="$PROJECT_DIR$/app/views/statistic/index.php" />
         <option value="$PROJECT_DIR$/app/views/deals/carReturned.php" />
         <option value="$PROJECT_DIR$/index.php" />
-        <option value="$PROJECT_DIR$/app/controllers/deals.php" />
         <option value="$PROJECT_DIR$/app/models/deals.php" />
         <option value="$PROJECT_DIR$/app/views/deals/index.php" />
         <option value="$PROJECT_DIR$/app/views/deals/returnCar.php" />
+        <option value="$PROJECT_DIR$/dbinit.sql" />
+        <option value="$PROJECT_DIR$/app/controllers/deals.php" />
       </list>
     </option>
   </component>
@@ -772,16 +769,16 @@
         <state vertical-scroll-proportion="0.61731845" vertical-offset="0" max-vertical-offset="1105">
           <caret line="13" column="34" selection-start-line="13" selection-start-column="34" selection-end-line="13" selection-end-column="34" />
           <folding>
-            <marker date="1431462905623" expanded="true" signature="-1:-1" placeholder="SELECT SUM(F..PAYMENT..." />
-            <marker date="1431462905623" expanded="true" signature="-1:-1" placeholder="SELECT Q1.CO..COUNT..." />
-            <marker date="1431462905623" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..ID..." />
-            <marker date="1431462905623" expanded="true" signature="-1:-1" placeholder="SELECT WAR.I..ID..." />
-            <marker date="1431462905623" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CLIENT..." />
-            <marker date="1431462905623" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..CLIENT..." />
-            <marker date="1431462905623" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..*..." />
-            <marker date="1431462905623" expanded="true" signature="-1:-1" placeholder="SELECT DD.* ..ID..." />
-            <marker date="1431462905623" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CLIENT..." />
-            <marker date="1431462905623" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DEAL..." />
+            <marker date="1431477887246" expanded="true" signature="-1:-1" placeholder="SELECT SUM(F..PAYMENT..." />
+            <marker date="1431477887246" expanded="true" signature="-1:-1" placeholder="SELECT Q1.CO..COUNT..." />
+            <marker date="1431477887246" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..ID..." />
+            <marker date="1431477887246" expanded="true" signature="-1:-1" placeholder="SELECT WAR.I..ID..." />
+            <marker date="1431477887246" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CLIENT..." />
+            <marker date="1431477887246" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..CLIENT..." />
+            <marker date="1431477887246" expanded="true" signature="-1:-1" placeholder="SELECT COUNT..*..." />
+            <marker date="1431477887246" expanded="true" signature="-1:-1" placeholder="SELECT DD.* ..ID..." />
+            <marker date="1431477887246" expanded="true" signature="-1:-1" placeholder="SELECT C.ID,..CLIENT..." />
+            <marker date="1431477887246" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..DEAL..." />
           </folding>
         </state>
       </provider>
@@ -952,16 +949,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/deals.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.076923" vertical-offset="1533" max-vertical-offset="2057">
-          <caret line="101" column="20" selection-start-line="101" selection-start-column="20" selection-end-line="101" selection-end-column="20" />
-          <folding>
-            <element signature="e#29#43#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/deals.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-10.461538" vertical-offset="204" max-vertical-offset="646">
@@ -975,9 +962,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dbinit.sql">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22849463" vertical-offset="0" max-vertical-offset="3162">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="6" />
+        <state vertical-scroll-proportion="-3.4" vertical-offset="17" max-vertical-offset="3179">
+          <caret line="6" column="6" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="6" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/deals.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6415094" vertical-offset="1581" max-vertical-offset="2159">
+          <caret line="107" column="36" selection-start-line="107" selection-start-column="36" selection-end-line="107" selection-end-column="36" />
+          <folding>
+            <element signature="e#29#43#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
