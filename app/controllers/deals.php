@@ -99,40 +99,47 @@ class Deals extends \core\controller {
         // 3 - damage
 
         $dealsModel = new \models\deals();
-        $deal = $dealsModel->getDeal($dealId);
+        $deal = $dealsModel->getDeal($dealId)[0];
         $deal->RETURN_DATE = time();
 
         $carModel = new \models\cars();
-        $car = $carModel->getCar($deal->CAR_ID);
+        $car = $carModel->getCar($deal->CAR_ID)[0];
         $carCost = $car->COST;
 
 
         // TODO: ...
         $returnDate = $deal->RETURN_DATE;
-        $startDate = $deal->START_DATE;
-        $finishDate = $deal->FINISH_DATE;
+        $startDate = strtotime($deal->START_DATE);
+        $finishDate = strtotime($deal->FINISH_DATE);
         $dealTime = $finishDate - $startDate;
         $fineTime = $returnDate - $finishDate;
-        $finalCost = $dealTime * $carCost;
+        $finalCost = $dealTime * $carCost / 60 / 60 / 24;
         $fineCost = 0;
         if ($fineType > 2) {
             $fineCost += $damageFineValue;
         } elseif ($fineType > 1) {
-            $fineCost += $fineTime * $carCost * 0.1;
+            $fineCost += $fineTime * $carCost * 0.1 / 60 / 60 / 24;
         }
-        $finalCost += $finalCost;
+        $finalCost += $fineCost;
 
-        if ($fineType = 0) {
+        if ($fineType == 0) {
             $fineType = NULL;
         }
+
+        $fineModel = new \models\fine();
+        $fine = array('FINE_TYPE' => $fineType,
+                        'FINE_COST' => $fineCost);
+        $fineId = $fineModel->addFine($fine);
+
         $payment = array('DEAL_ID' => $dealId,
-                            'FINE_ID' => $fineType,
-                            "FINAL_COST => $finalCost");
+                            'FINE_ID' => $fineId,
+                            'FINAL_COST' => $finalCost);
 
         $paymentModel = new \models\payment();
         $paymentModel->addPayment($payment);
 
-        $dealsModel->updateDeal($deal);
+        $dealsModel->updateDeal(array(
+            'RETURN_DATE '=> date('Y-m-d G:i:s', $deal->RETURN_DATE)));
 
         $data['totalPayment'] = $finalCost;   // including fine
         $data['fine'] = $fineCost;

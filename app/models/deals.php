@@ -13,7 +13,7 @@ class deals extends \core\model {
     }
 
     public function getDeal($id) {
-        return $this->_db->select("SELECT * FROM DEAL WHERE DEAL.id = $id");
+        return $this->_db->select("SELECT * FROM DEAL WHERE DEAL.ID = $id");
     }
 
     public function addDeal($deal) {
@@ -21,12 +21,7 @@ class deals extends \core\model {
     }
 
     public function updateDeal($deal) {
-        $dealArray = array('CAR_ID' => $deal['CAR_ID'],
-                            'CLIENT_ID' => $deal['CLIENT_ID'],
-                            'PREFERENCE_ID' => $deal['PREFERENCE_ID'],
-                            'START_DATE' => $deal('START_DATE'),
-                            'FINISH_DATE' => $deal('FINISH_DATE'),
-                            'RETURN_DATE' => $deal('RETURN_DATE'));
+        $dealArray = array('RETURN_DATE' => $deal['RETURN_DATE']);
         $where = array('ID' => $deal['ID']);
         return $this->_db->update(DEAL, $dealArray, $where);
     }
